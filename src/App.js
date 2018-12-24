@@ -10,8 +10,8 @@ import './timeline.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import mypic from './mypic.jpg';
-import show from './projects.js'
-
+import show from './projects.js';
+import about from './about.js';
 function BasicExample() {
     return (
   
@@ -42,7 +42,6 @@ function BasicExample() {
       </div>
         </Sidebar>
         <Main>
-         <h1>Welcome </h1>
 
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
@@ -67,7 +66,7 @@ function Home() {
 }
 
 function About() {
-  return <img src={mypic} alt="Mypic"/>;
+  return about();
 }
 
 function Topics({ match }) {
