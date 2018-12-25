@@ -10,3 +10,52 @@
   margin-top: 40px;
 
 }
+
+
+
+.shikhar {
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 300px;
+  margin-left: 300px;
+  margin-top: 40px;
+
+}
+
+
+
+.rectangle{
+border-radius: 25px;
+width: 900px;
+height: 500px;
+background: #5B7A83;
+margin-left: 50px;
+
+}
+
+
+.rectangle-about1{
+margin-left: 10px;
+margin-top: 10px;
+
+border-radius: 5px 50px 30px;    
+width: 500px;
+height:400px;
+background: #0E4671;
+
+}
+
+
+.rectangle-about2{
+margin-left: 600px;
+margin-top: -400px;
+border-radius: 50px 5px 30px 50px;    
+width: 400px;
+height:500px;
+background: #5EB380;
+
+}
+
+

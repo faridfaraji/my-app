@@ -27,11 +27,12 @@
    font-size: 2rem;
 }
 .Sidebar {
-width: 20vw;
-height: 100vh;
+width: 26vw;
+min-width: 26vw;
+height: 300vh;
 overflow: auto;
-background:#eee;
-
+background:#ABB4BC;
+display: inline-block;
 }
 .Sidebar:hover{
 background:#C0C0C0;
@@ -49,11 +50,18 @@ color:#1A4961;
 .link-ml{
 
 color:#1A4961;
-font-size: 25px;
+font-size: 27px;
 
 }
 
+
+.link-dl{
+color:#1A4961;
+font-size: 29px;
+}
+
 .big {
+   font-family: "Courier"; 
    color: #222; 
   float: left;
   border: none;
