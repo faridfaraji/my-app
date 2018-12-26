@@ -6,10 +6,11 @@ import './Home.css';
 
 export default function Home(){
 return(
+<Fade duration={1500}>    
  <Background>
   <p className="hometext"> TEXT GOES IN HERE </p>
- </Background>);       
-
+ </Background>       
+</Fade>);
 }
 
 

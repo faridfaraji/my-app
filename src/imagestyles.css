@@ -2,9 +2,9 @@
 
 .myimg {
 
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
+  border: 1px solid #626675;
+  border-radius: 5px;
+  padding: 1px;
   width: 300px;
   margin-left: 40px;
   margin-top: 40px;
@@ -15,9 +15,9 @@
 
 .shikhar {
 
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
+  border: 1px solid #7D8984;
+  border-radius: 5px;
+  padding: 1px;
   width: 300px;
   margin-left: 300px;
   margin-top: 40px;
@@ -32,7 +32,7 @@ width: 900px;
 height: 500px;
 background: #5B7A83;
 margin-left: 50px;
-
+border: 1px solid #626675;
 }
 
 

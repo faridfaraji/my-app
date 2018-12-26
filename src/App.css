@@ -26,13 +26,27 @@
 .text {
    font-size: 2rem;
 }
+
+
+.Root{
+
+color: #eee;
+
+
+
+
+}
 .Sidebar {
-width: 26vw;
-min-width: 26vw;
+width:100%;
+max-width:60vh;
+min-width:50vh;
 height: 300vh;
-overflow: auto;
 background:#ABB4BC;
-display: inline-block;
+margin-left: 20px;
+margin-top: 15px;
+
+border-radius: 40px;
+z-index: 1;
 }
 .Sidebar:hover{
 background:#C0C0C0;
@@ -61,7 +75,7 @@ font-size: 29px;
 }
 
 .big {
-   font-family: "Courier"; 
+   font-family: "Courier";
    color: #222; 
   float: left;
   border: none;
@@ -71,6 +85,7 @@ font-size: 29px;
   transition: 0.3s;
   font-size: 30px;
 line-height: 2;
+z-index: 9999;
 }
 
   

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import './Projects.css';
 
 
 export default function show(){
-return (<VerticalTimeline>
+return (<VerticalTimeline className = "timeline">
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     date="2011 - present"

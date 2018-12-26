@@ -10,62 +10,88 @@ import './timeline.css'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import mypic from './mypic.jpg';
-import show from './projects.js';
+import show from './Projects.js';
 import About from './About.js';
 import Home from './Home.js';
-import MachineLearning  from './MachineLearning.js';
-import {Regularization} from  './MachineLearning.js';
+import MachineLearning from './MachineLearning.js';
 function BasicExample() {
     return (
   
    <Router>     
-   <Root>     
-        
+         <Root>
          <Sidebar>
+
       <div className= "big">
         <ul>
           
         <Link className= "link" to="/">Home</Link>
-        <br /> 
+        <br />
+        <hr />
        <Link className = "link "to="/about">About</Link>
        <br />
+        <hr />
        <Link className = "link" to="/topics">Topics</Link>
        <br />
+        <hr />
        <Link className = "link-ml" to="/machine-learning">Machine Learning</Link>
+       <Route path="/machine-learning"
+           component={MachineLearning} />
         <br />
+        <hr />
        <Link className = "link-dl" to="/deep-learning">deep learning</Link>
         <br />
+        <hr />
        <Link className = "link" to="/Linear Algebra">Linear Algebra</Link>
         <br/>
+        <hr />
         <Link className = "link" to="/MLV Calc">MLV Calculus</Link>
         <br/>
+        <hr />
         <Link className = "link" to="/system">Systems</Link>
         <br />
+        <hr />
         <Link className = "link" to="/Operating Systems">Operating Sys</Link>
         <br />
+        <hr />
         <Link className = "link" to="/projects">Project</Link>
         </ul>
-
-        <hr />
+       <hr />
       </div>
-        <Route  path="/machine-learning" component={MachineLearning} />
+
         </Sidebar>
         <Main>
-
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/topics" component={Topics} />
         <Route path="/projects" component={Projects} />
-        <Route path="/machine-learning/Regularization" component={Regularization} />
         </Main>
-       </Root>
+        </Root>
         </Router>
   );    
       
     
-}
+}/*
+function MachineLearning({ match}){
+return(<div>
+  
+          <ul>
+            <li>
+              <Link to="/machine-learning/Regularization">Regularization</Link>
+            </li>
+            <li>
+              <Link to="/machine-learning/PCA">PCA</Link>
+            </li>
+          </ul>
+      </div>);
+  
+  }
 
 
+
+function Regularization(){
+return  <h3>Regularization</h3>;
+
+}*/
 
 function Topics({ match }) {
   return (

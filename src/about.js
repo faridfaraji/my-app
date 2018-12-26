@@ -9,7 +9,7 @@ import './About.css'
 export default function About(){
     return (
         
-    <Fade top duration={4000}>
+    <Fade duration={1500}>
       <div>
        <img className = 'myimg' src={mypic} alt="Mypic"/>
        <img className = 'shikhar' src={shikhar} alt="Shikharpic"/></div>
