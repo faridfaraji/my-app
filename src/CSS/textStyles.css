@@ -1,12 +1,36 @@
 
-.list-ML{
+.list{
 
 font-family: "Courier";
-     color: #4567;
-    font-size: 20px;
+color: #cc9900;
+font-size: 20px;
   line-height: 2;
   margin-left: 8px;
+text-decoration: none;
+
+
+}
+
+
+.bullet{
+
+font-family: "Courier";
+color: #cc9900;
+font-size: 20px;
+  line-height: 2;
+  margin-left: 8px;
+text-decoration: none;
+
+
+}
+
+.list:hover{
+
+
+color: #cccc00;
 
 
 
 }
+
+

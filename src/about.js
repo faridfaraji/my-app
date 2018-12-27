@@ -5,6 +5,9 @@ import shikhar from './IMG/shikhar.jpg';
 import './CSS/imagestyles.css'; 
 import Fade from 'react-reveal/Fade';
 import './CSS/About.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 
 class About extends Component{
 constructor() {
@@ -30,12 +33,16 @@ this.setStateHandler = this.setStateHandler.bind(this);
 }
 export function ShowAbout(){
     return (
-        
+      
     <Fade duration={1500}>
+  
       <div>
        <img className = 'myimg' src={mypic} alt="Mypic"/>
        <img className = 'shikhar' src={shikhar} alt="Shikharpic"/></div>
-     <div>  <Description1>
+      
+     <div>  
+    
+     <Description1>
         <p className="abouttext"> Farid's Bio </p>
        </Description1>  
       </div>
@@ -45,7 +52,8 @@ export function ShowAbout(){
         </Description2>
        </div>
 
-      </Fade>  
+      </Fade> 
+    
     );
  
 

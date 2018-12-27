@@ -12,7 +12,7 @@ import mypic from './IMG/mypic.jpg';
 import Projects,{ShowContent} from './Projects.js';
 import About, {ShowAbout} from './About.js';
 import Home, {ShowHome} from './Home.js';
-import MachineLearning from './MachineLearning.js';
+import MachineLearning, {Regularization} from './MachineLearning.js';
 import Classes, {Topics}from './Classes.js';
 import DeepLearning from './DeepLearning.js';
 import LinAlg from './LinAlg.js';
@@ -22,27 +22,29 @@ import Oper from './OperSys.js';
 
 class App extends Component{
 
-constructor(Links ={Links}) {
-      super(Links={Links})
+constructor(props) {
+      super(props)
       this.state = {
-        hide: true
+        
       }
   this.setStateHandler = this.setStateHandler.bind(this);
   
   }
     setStateHandler() {
-        this.setState({hide: !this.state.hide})
+        
      }
   
 
     render() {
       return (
+         
    <Router>     
          <Root>
         <div>
+        <ssssh/>
       <div className= "big">
         <ul>
-         <Home />
+       <Home />
         <hr />
        <About />
         <hr />
@@ -62,6 +64,7 @@ constructor(Links ={Links}) {
         <hr />
         <Projects/>
         <hr/>
+        
         </ul>
       </div>
         <Sidebar>
@@ -72,6 +75,7 @@ constructor(Links ={Links}) {
         <Route path="/about" component={ShowAbout} />
         <Route path="/topics" component={Topics} />
         <Route path="/projects" component={ShowContent} />
+        <Route path="/machine-learningData Science" component={Regularization} />
         </Main>
         </Root>
     </Router>);
@@ -79,7 +83,14 @@ constructor(Links ={Links}) {
 }
 
 
-
+/// This is not used yet anywhere
+const links = () => ( Links.map((Link) =>
+        <div>
+        <Link />
+        <hr />
+       </div>   
+     )
+)
 
 const Root = (props) => (
 <div style={{
