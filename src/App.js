@@ -1,141 +1,83 @@
 
 
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import  './App.css';
-import './Button.css';
+import logo from './IMG/logo.svg';
+import  './CSS/App.css';
+import './CSS/Button.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import 'semantic-ui-css/semantic.min.css';
-import './timeline.css'
+//import 'semantic-ui-css/semantic.min.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import mypic from './mypic.jpg';
-import show from './Projects.js';
-import About from './About.js';
-import Home from './Home.js';
+import mypic from './IMG/mypic.jpg';
+import Projects,{ShowContent} from './Projects.js';
+import About, {ShowAbout} from './About.js';
+import Home, {ShowHome} from './Home.js';
 import MachineLearning from './MachineLearning.js';
-function BasicExample() {
-    return (
-  
-   <Router>     
-         <Root>
-         <Sidebar>
+import Classes, {Topics}from './Classes.js';
+import DeepLearning from './DeepLearning.js';
+import LinAlg from './LinAlg.js';
+import MLVCalc from './MLVCalc.js';
+import Sys from './Systems.js';
+import Oper from './OperSys.js';
 
-      <div className= "big">
-        <ul>
-          
-        <Link className= "link" to="/">Home</Link>
-        <br />
-        <hr />
-       <Link className = "link "to="/about">About</Link>
-       <br />
-        <hr />
-       <Link className = "link" to="/topics">Topics</Link>
-       <br />
-        <hr />
-       <Link className = "link-ml" to="/machine-learning">Machine Learning</Link>
-       <Route path="/machine-learning"
-           component={MachineLearning} />
-        <br />
-        <hr />
-       <Link className = "link-dl" to="/deep-learning">deep learning</Link>
-        <br />
-        <hr />
-       <Link className = "link" to="/Linear Algebra">Linear Algebra</Link>
-        <br/>
-        <hr />
-        <Link className = "link" to="/MLV Calc">MLV Calculus</Link>
-        <br/>
-        <hr />
-        <Link className = "link" to="/system">Systems</Link>
-        <br />
-        <hr />
-        <Link className = "link" to="/Operating Systems">Operating Sys</Link>
-        <br />
-        <hr />
-        <Link className = "link" to="/projects">Project</Link>
-        </ul>
-       <hr />
-      </div>
+class App extends Component{
 
-        </Sidebar>
-        <Main>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
-        <Route path="/projects" component={Projects} />
-        </Main>
-        </Root>
-        </Router>
-  );    
-      
-    
-}/*
-function MachineLearning({ match}){
-return(<div>
-  
-          <ul>
-            <li>
-              <Link to="/machine-learning/Regularization">Regularization</Link>
-            </li>
-            <li>
-              <Link to="/machine-learning/PCA">PCA</Link>
-            </li>
-          </ul>
-      </div>);
+constructor(Links ={Links}) {
+      super(Links={Links})
+      this.state = {
+        hide: true
+      }
+  this.setStateHandler = this.setStateHandler.bind(this);
   
   }
-
-
-
-function Regularization(){
-return  <h3>Regularization</h3>;
-
-}*/
-
-function Topics({ match }) {
-  return (
-    <div>
-      <h2>Machine learning</h2>
-      <ul>
-        <li>
-          <Link to={`${match.url}/rendering`}>Rendering with React</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/components`}>Components</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-      </ul>
-
-      <Route path={`${match.path}/:topicId`} component={Topic} />
-      <Route
-        exact
-        path={match.path}
-        render={() => <h3>Please select a topic.</h3>}
-      />
-    </div>
-  );
-}
-
-function Topic({ match }) {
-  return (
-    <div>
-      <h3>{match.params.topicId}</h3>
-    </div>
-  );
-}
-
-
-
-
-
-function Projects({ match }){
+    setStateHandler() {
+        this.setState({hide: !this.state.hide})
+     }
   
-return show();
 
+    render() {
+      return (
+   <Router>     
+         <Root>
+        <div>
+      <div className= "big">
+        <ul>
+         <Home />
+        <hr />
+       <About />
+        <hr />
+       <Classes/>
+        <hr />
+       <MachineLearning />
+        <hr />
+       <DeepLearning/>
+        <hr />
+       <LinAlg/>
+        <hr />
+        <MLVCalc/>
+        <hr />
+        <Sys/>
+        <hr />
+        <Oper/>
+        <hr />
+        <Projects/>
+        <hr/>
+        </ul>
+      </div>
+        <Sidebar>
+        </Sidebar>
+    </div>
+        <Main>
+        <Route exact path="/my-app" component={ShowHome} />
+        <Route path="/about" component={ShowAbout} />
+        <Route path="/topics" component={Topics} />
+        <Route path="/projects" component={ShowContent} />
+        </Main>
+        </Root>
+    </Router>);
+  }
 }
+
 
 
 
@@ -162,5 +104,19 @@ const Main = (props) => (
 
 
 
-export default BasicExample;
+
+const Links =[
+    { id: 0, name: "Home", to: "/home" }, 
+    { id: 0, name: "About", to: "/about" },
+    { id: 0, name: "Classes", to: "/classes" },
+    { id: 0, name: "Machine Learning", to: "/machine-learning" },
+    { id: 0, name: "Deep Learning", to: "/deep-learning"},
+    { id: 0, name: "Linear Algebra", to: "linear-algebra" },
+    { id: 0, name: "MLV Calculus", to: "mlv-calculus"},
+    { id: 0, name: "Systems", to: "systems" },
+    { id: 0, name: "Operating Sys", to: "operating-sys" },
+    { id: 0, name: "Projects", to: "projects" },
+];
+
+export default App;
 

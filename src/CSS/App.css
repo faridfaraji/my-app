@@ -41,42 +41,64 @@ width:100%;
 max-width:60vh;
 min-width:50vh;
 height: 300vh;
-background:#ABB4BC;
+background:#7B7770;
 margin-left: 20px;
 margin-top: 15px;
-
 border-radius: 40px;
 z-index: 1;
 }
-.Sidebar:hover{
-background:#C0C0C0;
 
 
-}
 
 
 .link{
-
-color:#1A4961;
+text-decoration:none; 
+color:#FEFEFE;
 
 }
 
-.link-ml{
+.link:hover{
+color:#394A3D;
 
-color:#1A4961;
+
+}
+
+
+
+
+
+.link-ml{
+text-decoration: none; 
+color:#FEFEFE;
 font-size: 27px;
 
 }
 
 
+.link-ml:hover{
+color:#394A3D;
+
+
+
+}
+
+
 .link-dl{
-color:#1A4961;
+text-decoration: none;     
+color:#FEFEFE;
 font-size: 29px;
+}
+
+
+.link-dl:hover{
+
+color:#394A3D;
+
 }
 
 .big {
    font-family: "Courier";
-   color: #222; 
+   color: #FEFEFE; 
   float: left;
   border: none;
   outline: none;
@@ -84,8 +106,8 @@ font-size: 29px;
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 30px;
-line-height: 2;
-z-index: 9999;
+  line-height: 2;
+  z-index: 9999;
 }
 
   

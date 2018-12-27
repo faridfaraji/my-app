@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
-import mypic from './mypic.jpg';
-import shikhar from './shikhar.jpg';
-import './imagestyles.css'; 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import mypic from './IMG/mypic.jpg';
+import shikhar from './IMG/shikhar.jpg';
+import './CSS/imagestyles.css'; 
 import Fade from 'react-reveal/Fade';
-import './About.css'
+import './CSS/About.css'
 
+class About extends Component{
+constructor() {
+    super()
+    this.state = {
+      
+    }
+this.setStateHandler = this.setStateHandler.bind(this);
 
-export default function About(){
+}
+  setStateHandler() {
+      
+   }
+ 
+  render() {
+      
+    return (
+        <div>
+        <Link className = "link "to="/about">About</Link>
+        </div> 
+    );
+  }
+}
+export function ShowAbout(){
     return (
         
     <Fade duration={1500}>
@@ -36,3 +58,6 @@ const Description1 = (props) => (
 
 const Description2 = (props) => (
 <div className = "rectangle-about2" {...props} />)
+
+
+export default About;

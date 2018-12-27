@@ -1,26 +1,57 @@
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import React, { Component } from 'react';
-import './imagestyles.css';
+import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
-import './textStyles.css';
+import './CSS/textStyles.css';
 
-export default function MachineLeaning(){
-return ( <ul className = "list-ML">
+
+
+class MachineLearning extends Component{
+constructor() {
+    super()
+    this.state = {
+      hide: false
+    }
+this.setStateHandler = this.setStateHandler.bind(this);
+
+}
+  setStateHandler() {
+      this.setState({hide: !this.state.hide})
+   }
+ 
+  render() {
+      
+    return (
+        <div>
+        <Link className = "link-ml" onClick={this.setStateHandler.bind(this)}
+        to="/machine-learning">Machine Learning</Link>
+        {this.state.hide 
+        && <Sublinks />}
+        </div> 
+    );
+  }
+}
+
+
+const Sublinks = () => (
+ <ul className = "list-ML">
           <li>
             <Link  to="/machine-learning/Regularization">Regularization</Link>
+    
           </li>
           <li>
             <Link  to="/machine-learning/PCA">PCA</Link>
           </li>
-        </ul>);
-    
-
-}
+        </ul>
 
 
 
-export  function Regularization(){
+
+
+)
+
+export function Regularization(){
 
 return <h3>Regularization</h3>;
 
@@ -33,8 +64,6 @@ export function PCA(){
 return <h3>PCA</h3>;
 
 }
-
-
 
     
 const Main = (props) => (
@@ -70,4 +99,4 @@ const TOPICS = [
   { id: 19, topic: "L2 Reg", subs: [1, 2] },  
 ];
 
-
+export default MachineLearning;

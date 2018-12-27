@@ -27,12 +27,11 @@
 
 
 .rectangle{
-border-radius: 25px;
+border-radius: 10px;
 width: 900px;
 height: 500px;
-background: #5B7A83;
+background: #3F3E3C;
 margin-left: 50px;
-border: 1px solid #626675;
 }
 
 
@@ -40,22 +39,25 @@ border: 1px solid #626675;
 margin-left: 10px;
 margin-top: 10px;
 
-border-radius: 5px 50px 30px;    
+border-radius: 5px 30px 20px; 
+
 width: 500px;
 height:400px;
-background: #0E4671;
-
+background: #3385ff;
+border: 5px solid #ffffff;
+border-width:0 0 5px;
 }
 
 
 .rectangle-about2{
 margin-left: 600px;
 margin-top: -400px;
-border-radius: 50px 5px 30px 50px;    
+border-radius: 30px 5px 20px 30px;    
 width: 400px;
 height:500px;
-background: #5EB380;
-
+background: #ff0066;
+border: 5px solid #ffffff;
+border-width:0 0 5px;
 }
 
 

@@ -1,10 +1,35 @@
 import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import 'react-vertical-timeline-component/style.min.css';
-import './Projects.css';
+import './CSS/Projects.css';
 
 
-export default function show(){
+class Projects extends Component{
+constructor() {
+    super()
+    this.state = {
+      
+    }
+this.setStateHandler = this.setStateHandler.bind(this);
+
+}
+  setStateHandler() {
+      
+   }
+ 
+  render() {
+      
+    return (
+      <Link className = "link" to="/projects">Project</Link>
+    );
+
+}
+
+}
+
+
+export function ShowContent(){
 return (<VerticalTimeline className = "timeline">
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -89,3 +114,9 @@ return (<VerticalTimeline className = "timeline">
 </VerticalTimeline>);
 
 }
+
+
+
+
+
+export default Projects;
