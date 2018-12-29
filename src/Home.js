@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
-import './CSS//Home.css';
+import './CSS/textStyles.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import ReactResizeDetector from 'react-resize-detector';
 
 
 
@@ -40,8 +41,10 @@ return(
 
  <div>
  <Background>
-  <p className="hometext"> TEXT GOES IN HERE </p>
- </Background>       
+ 
+  <p className="textStyle"> TEXT GOES IN HERE </p>
+ </Background>   
+    
   </div>
  
 

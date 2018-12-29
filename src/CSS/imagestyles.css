@@ -6,7 +6,7 @@
   border-radius: 5px;
   padding: 1px;
   width: 300px;
-  margin-left: 40px;
+  margin-left: 70px;
   margin-top: 40px;
 
 }
@@ -26,17 +26,38 @@
 
 
 
+
+
 .rectangle{
 border-radius: 10px;
-width: 900px;
+width: 1000px;
 height: 500px;
 background: #3F3E3C;
 margin-left: 50px;
 }
 
+.frame {
+  
+border-style: solid;
+border-width: 1.5px;
+border-radius: 10px;
+color: #4c4743;
+margin-left: 70px;
+width: 900px;
+height: 1100px;
+}
+
+.code-frame{
+border-radius: 6px;
+width: 800px;
+height: 100px;
+background: #538fc6;
+margin-left: 50px;
+}
+
 
 .rectangle-about1{
-margin-left: 10px;
+margin-left: 30px;
 margin-top: 10px;
 
 border-radius: 5px 30px 20px; 
@@ -58,6 +79,14 @@ height:500px;
 background: #ff0066;
 border: 5px solid #ffffff;
 border-width:0 0 5px;
+}
+
+
+.pagination{
+ color: #844711;
+ margin-left: 300px;
+
+
 }
 
 

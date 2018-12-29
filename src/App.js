@@ -5,7 +5,6 @@ import logo from './IMG/logo.svg';
 import  './CSS/App.css';
 import './CSS/Button.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-//import 'semantic-ui-css/semantic.min.css';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import mypic from './IMG/mypic.jpg';
@@ -14,7 +13,7 @@ import About, {ShowAbout} from './About.js';
 import Home, {ShowHome} from './Home.js';
 import MachineLearning, {Regularization} from './MachineLearning.js';
 import Classes, {Topics}from './Classes.js';
-import DeepLearning from './DeepLearning.js';
+import DeepLearning, {deepLearnProject, Pytorch} from './DeepLearning.js';
 import LinAlg from './LinAlg.js';
 import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
@@ -33,18 +32,23 @@ constructor(props) {
     setStateHandler() {
         
      }
-  
+
+
+
+
 
     render() {
+ 
       return (
          
    <Router>     
          <Root>
         <div>
-        <ssssh/>
       <div className= "big">
+      
         <ul>
-       <Home />
+        
+    <Home />
         <hr />
        <About />
         <hr />
@@ -64,18 +68,24 @@ constructor(props) {
         <hr />
         <Projects/>
         <hr/>
-        
         </ul>
       </div>
-        <Sidebar>
-        </Sidebar>
+     <Sidebar>
+     </Sidebar>
+
+       
+        
+        
+
     </div>
         <Main>
         <Route exact path="/my-app" component={ShowHome} />
         <Route path="/about" component={ShowAbout} />
         <Route path="/topics" component={Topics} />
         <Route path="/projects" component={ShowContent} />
-        <Route path="/machine-learningData Science" component={Regularization} />
+        <Route path="/machine-learning/Data Science" component={Regularization} />
+        <Route path="/deep-learning/Project" component={deepLearnProject} />
+        <Route path="/deep-learning/Pytorch" component={Pytorch} />
         </Main>
         </Root>
     </Router>);
@@ -83,14 +93,30 @@ constructor(props) {
 }
 
 
+      
 /// This is not used yet anywhere
-const links = () => ( Links.map((Link) =>
+
+const TITLES =[
+    { id: 0, name: "Home", to: "/home" }, 
+    { id: 1, name: "About", to: "/about" },
+    { id: 2, name: "Classes", to: "/classes" },
+    { id: 3, name: "Machine Learning", to: "/machine-learning" },
+    { id: 4, name: "Deep Learning", to: "/deep-learning"},
+    { id: 5, name: "Linear Algebra", to: "linear-algebra" },
+    { id: 6, name: "MLV Calculus", to: "mlv-calculus"},
+    { id: 7, name: "Systems", to: "systems" },
+    { id: 8, name: "Operating Sys", to: "operating-sys" },
+    { id: 9, name: "Projects", to: "projects" },
+];
+
+const titles = () => ( TITLES.map((TITLE) =>
         <div>
-        <Link />
+         {TITLE.name} 
         <hr />
        </div>   
      )
 )
+
 
 const Root = (props) => (
 <div style={{
@@ -116,18 +142,7 @@ const Main = (props) => (
 
 
 
-const Links =[
-    { id: 0, name: "Home", to: "/home" }, 
-    { id: 0, name: "About", to: "/about" },
-    { id: 0, name: "Classes", to: "/classes" },
-    { id: 0, name: "Machine Learning", to: "/machine-learning" },
-    { id: 0, name: "Deep Learning", to: "/deep-learning"},
-    { id: 0, name: "Linear Algebra", to: "linear-algebra" },
-    { id: 0, name: "MLV Calculus", to: "mlv-calculus"},
-    { id: 0, name: "Systems", to: "systems" },
-    { id: 0, name: "Operating Sys", to: "operating-sys" },
-    { id: 0, name: "Projects", to: "projects" },
-];
+
 
 export default App;
 

@@ -2,7 +2,7 @@
 .list{
 
 font-family: "Courier";
-color: #cc9900;
+color: #99481f;
 font-size: 20px;
   line-height: 2;
   margin-left: 8px;
@@ -10,12 +10,17 @@ text-decoration: none;
 
 
 }
-
+.textStyle{
+font-family: "Courier";
+font-size: 1.5em;
+margin-left: 40px; 
+color:#F8F9F8;
+}
 
 .bullet{
 
 font-family: "Courier";
-color: #cc9900;
+color: #99481f;
 font-size: 20px;
   line-height: 2;
   margin-left: 8px;

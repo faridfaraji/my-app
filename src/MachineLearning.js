@@ -12,7 +12,7 @@ class MachineLearning extends Component{
 constructor(props) {
     super(props)
     this.state = {
-      TOPICS: TOPICS,
+      
       hide: false
     }
 this.setStateHandler = this.setStateHandler.bind(this);
@@ -69,7 +69,7 @@ const TOPICS = [
 const Sublinks = () => ( TOPICS.map((TOPIC) =>
     <ul className = "bullet">    
     <li key={TOPIC.id} >
-    <Link className = "list"  to={"/machine-learning"+TOPIC.topic}>{TOPIC.topic}</Link>
+    <Link className = "list"  to={"/machine-learning"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
  
     </li>
     </ul>

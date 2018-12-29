@@ -5,8 +5,6 @@ import shikhar from './IMG/shikhar.jpg';
 import './CSS/imagestyles.css'; 
 import Fade from 'react-reveal/Fade';
 import './CSS/About.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 
 
 class About extends Component{
