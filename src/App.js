@@ -24,6 +24,8 @@ class App extends Component{
 constructor(props) {
       super(props)
       this.state = {
+          hide: false,
+          datas: []
         
       }
   this.setStateHandler = this.setStateHandler.bind(this);
@@ -38,6 +40,16 @@ constructor(props) {
 
 
     render() {
+
+        const Sublinks = () => ( this.datas.map((data) =>
+    <ul className = "bullet">    
+    <li key={data.id} >
+    <Link className = "list"  to={"/deep-learning"+'/'+this.datas.name}>{this.datas.name}</Link>
+ 
+    </li>
+    </ul>
+     )
+)
  
       return (
          
@@ -68,6 +80,7 @@ constructor(props) {
         <hr />
         <Projects/>
         <hr/>
+        {this.state.hide && <Sublinks/>}
         </ul>
       </div>
      <Sidebar>
@@ -91,6 +104,9 @@ constructor(props) {
     </Router>);
   }
 }
+
+
+
 
 
       

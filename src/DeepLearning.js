@@ -4,7 +4,7 @@ import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import axios from 'axios';
-import {Introduction, NetWorkArch} from './CONTS/pytorch.js';
+import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/pytorch.js';
 
 
 
@@ -98,21 +98,33 @@ showContents(){
 }
 
 
-
-
-
 render() {
 
   
-      
     return (
       <div>
         <Frame>
-        {this.state.i}
+        
        {this.showContents()}
+       
       </Frame>
-     <Link className = "pagination" onClick={(e) =>this.previousPage(e)}  to="/deep-learning/Pytorch" > Previous--- </Link>
-   <Link className = "pagination"  onClick={(e) =>this.nextPage(e)} to="/deep-learning/Pytorch" >  ---Next </Link>
+          
+     <Link onClick={(e) =>this.previousPage(e)}  to="/deep-learning/Pytorch" >
+       <button  className="paginationPrev">
+        <p>Previous</p>
+     </button>
+       </Link>
+       
+        <Link className="pageNum" to="/deep-learning/Pytorch" >{this.state.i+1}</Link>
+    
+       
+   <Link onClick={(e) =>this.nextPage(e)} to="/deep-learning/Pytorch" > 
+   <button className="paginationNext">
+        <p>Next</p>
+     </button> </Link>
+     
+      
+
         </div> 
     );
   }
@@ -121,7 +133,7 @@ render() {
 }
 
 var PAGES = [
- Introduction, NetWorkArch, Introduction
+ Introduction,NeuralNetPytorch, NetWorkArch
   
 ];
 

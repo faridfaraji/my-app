@@ -8,11 +8,44 @@ const CodeFrame = (props) => (
 export const Introduction= (
 
 <div>
-        <p className="textStyle"> Introduction To Pytorch: </p>
+        <p className="textStyle"> 
+       
+        Introduction To Pytorch:
+         <p><font size="4">
+        PyTorch is an open-source machine learning library for Python, just like Tensorflow, 
+        I personally find using pyTorch easier, Since pytorch tensors behave very similar to 
+        Numpy arrays. (Note: Tensors can simply be considered multidimensional arrays)
+        </font> </p>
+        <p><font size="4">
+        The advantage of using libraries like Pytorch and TensorFlow is that their tensors can used 
+        on a GPU that supports CUDA.
+        </font> </p>
+        <p><font size="4">
+        In the Pytorch and TensorFlow sections we will implement bunch of neural Networks, So make sure 
+        you know about Neural Networks first. 
+        </font> </p>
+        <p><font size="4">
+        Lets go over some built in Pytorch functions we are going to need:
+
+        </font></p>
+
+      
+         </p>
        <CodeFrame>
        </CodeFrame>
 </div>
        
+)
+
+
+export const NeuralNetPytorch=(
+
+<div>
+        <p className="textStyle"> Neural Networks in Pytorch: </p>
+       <CodeFrame>
+       </CodeFrame>
+</div>
+
 )
 
 

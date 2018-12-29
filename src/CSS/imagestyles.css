@@ -82,11 +82,40 @@ border-width:0 0 5px;
 }
 
 
-.pagination{
- color: #844711;
- margin-left: 300px;
+.paginationPrev{
+  font-family: "Courier";
+ color: #302f2b;
+ margin-left: 400px;
+margin-top:  30px;
+width: 70px;
+background-color: #f7f0dc;
+border-radius: 8px;
+}
+
+.pageNum{
+
+font-family: "Courier";
+color: #99481f;
+margin-left: 50px;
+font-size: 20px;
+text-decoration: none;
+
+
+ 
+}
+
+.paginationNext{
+  font-family: "Courier";
+ color: #302f2b;
+ margin-left: 50px;
+ margin-top:  30px;
+ width: 70px;
+ background-color: #f7f0dc;
+ border-radius: 8px;
 
 
 }
+
+
 
 
