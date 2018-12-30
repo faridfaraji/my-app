@@ -14,6 +14,7 @@ text-decoration: none;
 font-family: "Courier";
 font-size: 1.5em;
 margin-left: 40px; 
+line-height: 40px;
 color:#F8F9F8;
 }
 
@@ -37,5 +38,24 @@ color: #cccc00;
 
 
 }
+
+
+.ul {
+  list-style: none;
+ 
+}
+
+
+.li {
+  
+  text-indent: -1em;
+}
+
+.li:before {
+  content: ">>";
+  padding-right: 5px;
+}
+
+
 
 

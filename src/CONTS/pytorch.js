@@ -26,12 +26,21 @@ export const Introduction= (
         </font> </p>
         <p><font size="4">
         Lets go over some built in Pytorch functions we are going to need:
-
+        <br/>
+        <ul  className="ul" >
+      <li className="li">torch.mm() </li>
+       <li className="li">torch.randn((a,b))</li>
+      <li className="li">Milk</li>
+       </ul>
+       
         </font></p>
 
-      
          </p>
        <CodeFrame>
+       <pre><code>
+       y = activation(torch.mm(features, weights.view(5,1)) + bias)
+
+       </code></pre>
        </CodeFrame>
 </div>
        

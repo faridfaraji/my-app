@@ -29,11 +29,12 @@
 
 
 .rectangle{
+ margin-left: 50px;
 border-radius: 10px;
 width: 1000px;
 height: 500px;
 background: #3F3E3C;
-margin-left: 50px;
+
 }
 
 .frame {
@@ -115,6 +116,8 @@ text-decoration: none;
 
 
 }
+
+
 
 
 
