@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "5e93b8219f8b8dde9393",
-    "url": "/my-app/static/css/main.a1d93644.chunk.css"
+    "revision": "23331356107bd3b15630",
+    "url": "/my-app/static/css/main.f0c378a2.chunk.css"
   },
   {
-    "revision": "5e93b8219f8b8dde9393",
-    "url": "/my-app/static/js/main.5e93b821.chunk.js"
+    "revision": "23331356107bd3b15630",
+    "url": "/my-app/static/js/main.23331356.chunk.js"
   },
   {
-    "revision": "6e56c98a6ade69f1bac5",
-    "url": "/my-app/static/css/1.a93d0016.chunk.css"
+    "revision": "23c6a81e04136e1ca4ae",
+    "url": "/my-app/static/css/1.50243a4d.chunk.css"
   },
   {
-    "revision": "6e56c98a6ade69f1bac5",
-    "url": "/my-app/static/js/1.6e56c98a.chunk.js"
+    "revision": "23c6a81e04136e1ca4ae",
+    "url": "/my-app/static/js/1.23c6a81e.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
@@ -24,6 +24,10 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/mypic.8e1e1542.jpg"
   },
   {
+    "revision": "ca533b882358328702f5a0df13ff7cda",
+    "url": "/my-app/static/media/facebook.ca533b88.ico"
+  },
+  {
     "revision": "bfbf510a57ba87a658e5003afcffb18c",
     "url": "/my-app/static/media/shikhar.bfbf510a.jpg"
   },
@@ -32,7 +36,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "0924ebb8e997ed87d1a9304d10670c99",
+    "revision": "c3ba8b21a3ead3689eda55d463cf1e2d",
     "url": "/my-app/index.html"
   }
 ];
