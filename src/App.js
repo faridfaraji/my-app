@@ -13,7 +13,7 @@ import About, {ShowAbout} from './About.js';
 import Home, {ShowHome} from './Home.js';
 import MachineLearning, {Regularization} from './MachineLearning.js';
 import Classes, {Topics}from './Classes.js';
-import DeepLearning, {deepLearnProject, Pytorch} from './DeepLearning.js';
+import DeepLearning, {deepLearnProject, DeepConts} from './DeepLearning.js';
 import LinAlg from './LinAlg.js';
 import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
@@ -25,6 +25,7 @@ class App extends Component{
 constructor(props) {
       super(props)
       this.state = {
+         
           hide: false,
           datas: []
         
@@ -93,8 +94,8 @@ constructor(props) {
         <Route path="/projects" component={ShowContent} />
         <Route path="/machine-learning/Data Science" component={Regularization} />
         <Route path="/deep-learning/Project" component={deepLearnProject} />
-        <Route path="/deep-learning/Pytorch" component={Pytorch} />
-
+        <Route path="/deep-learning/Pytorch" render={(props) => <DeepConts {...props} foo={1} /> }/>
+        <Route path="/deep-learning/CNN" render={(props) => <DeepConts {...props} foo={0} /> }/>
         </Main>
         </Root>
     </Router>);

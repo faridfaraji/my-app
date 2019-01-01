@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import axios from 'axios';
 import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/pytorch.js';
+import {CNNIntro} from './CONTS/CNN.js';
 
 
 
@@ -49,7 +50,8 @@ const TOPICS = [
 const Sublinks = () => ( TOPICS.map((TOPIC) =>
     <ul className = "bullet">    
     <li key={TOPIC.id} >
-    <Link className = "list"  to={"/deep-learning"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
+    <Link className = "list" to= { "/deep-learning"+'/'+TOPIC.topic}
+    >{TOPIC.topic}</Link>
  
     </li>
     </ul>
@@ -57,29 +59,38 @@ const Sublinks = () => ( TOPICS.map((TOPIC) =>
 )
 
 /// THIS IS Pytorch Link
-export class Pytorch extends Component {
-constructor() {
-    super()
+export class DeepConts extends Component {
+constructor(props) {
+    super(props)
     this.state = {
       i: 0,
       hide: false
     }
     this.setStateHandler = this.setStateHandler.bind(this);
 
-
-  
 }
+
+
 
 setStateHandler() {
       this.setState({hide: !this.state.hide})
    }
 
+
 nextPage(){
+var length;
+  switch(this.props.foo){
+    case 0:
+      length = PagesCNN.length-1;
+      break;
+    case 1:
+      length = PagesPytorch.length-1;
 
- if (this.state.i != PAGES.length-1)
+  }
+
+
+ if (this.state.i != length)
 this.setState({ i: this.state.i + 1 });
-
-
 
 }
 
@@ -93,14 +104,21 @@ previousPage(){
 
 showContents(){
 
- return  (PAGES.slice(this.state.i,this.state.i+1));
+  switch(this.props.foo){
+    case 0:
+      return  (PagesCNN.slice(this.state.i,this.state.i+1));
+    case 1:
+      return  (PagesPytorch.slice(this.state.i,this.state.i+1));
 
+  }
+
+ 
 }
 
 
 render() {
 
-  
+  var currentLocation = this.props.location.pathname;
     return (
       <div>
         <Frame>
@@ -109,22 +127,19 @@ render() {
        
       </Frame>
           
-     <Link onClick={(e) =>this.previousPage(e)}  to="/deep-learning/Pytorch" >
+     <Link onClick={(e) =>this.previousPage(e)}  to={currentLocation} >
        <button  className="paginationPrev">
         <p>Previous</p>
      </button>
        </Link>
        
-        <Link className="pageNum" to="/deep-learning/Pytorch" >{this.state.i+1}</Link>
+        <Link className="pageNum" to={currentLocation} >{this.state.i+1}</Link>
     
        
-   <Link onClick={(e) =>this.nextPage(e)} to="/deep-learning/Pytorch" > 
+   <Link onClick={(e) =>this.nextPage(e)} to={currentLocation} > 
    <button className="paginationNext">
         <p>Next</p>
      </button> </Link>
-     
-      
-
         </div> 
     );
   }
@@ -132,9 +147,14 @@ render() {
 
 }
 
-var PAGES = [
+var PagesPytorch = [
  Introduction,NeuralNetPytorch, NetWorkArch
   
+];
+
+var PagesCNN = [
+CNNIntro
+
 ];
 
 
