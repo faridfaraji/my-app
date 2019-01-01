@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "74e72fc2893f4b69a1f7",
-    "url": "/my-app/static/css/main.4621a41d.chunk.css"
+    "revision": "d42bf12c676e770e56b5",
+    "url": "/my-app/static/css/main.a98bb992.chunk.css"
   },
   {
-    "revision": "74e72fc2893f4b69a1f7",
-    "url": "/my-app/static/js/main.74e72fc2.chunk.js"
+    "revision": "d42bf12c676e770e56b5",
+    "url": "/my-app/static/js/main.d42bf12c.chunk.js"
   },
   {
-    "revision": "866cb555754f79251faf",
-    "url": "/my-app/static/css/1.50243a4d.chunk.css"
+    "revision": "a6b5c14fadd9591ff233",
+    "url": "/my-app/static/css/1.2b1cce19.chunk.css"
   },
   {
-    "revision": "866cb555754f79251faf",
-    "url": "/my-app/static/js/1.866cb555.chunk.js"
+    "revision": "a6b5c14fadd9591ff233",
+    "url": "/my-app/static/js/1.a6b5c14f.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
@@ -32,11 +32,15 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/shikhar.bfbf510a.jpg"
   },
   {
+    "revision": "ace0902b6604b821e2ff3b937601531f",
+    "url": "/my-app/static/media/wave.ace0902b.jpg"
+  },
+  {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/my-app/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "9b95538ce605ced9ab26a64a41c2a897",
+    "revision": "afc0b589880b613806b25a2e486eb601",
     "url": "/my-app/index.html"
   }
 ];
