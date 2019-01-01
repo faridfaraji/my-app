@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "78d7bd48ab7e6aa20eba",
-    "url": "/my-app/static/css/main.4c88e6d9.chunk.css"
+    "revision": "4e9c83eb05696709f833",
+    "url": "/my-app/static/css/main.c7ae436f.chunk.css"
   },
   {
-    "revision": "78d7bd48ab7e6aa20eba",
-    "url": "/my-app/static/js/main.78d7bd48.chunk.js"
+    "revision": "4e9c83eb05696709f833",
+    "url": "/my-app/static/js/main.4e9c83eb.chunk.js"
   },
   {
-    "revision": "39814e9904d798daa89b",
-    "url": "/my-app/static/css/1.a75ad2bb.chunk.css"
+    "revision": "7584ac1caae1938230d5",
+    "url": "/my-app/static/css/1.407eb416.chunk.css"
   },
   {
-    "revision": "39814e9904d798daa89b",
-    "url": "/my-app/static/js/1.39814e99.chunk.js"
+    "revision": "7584ac1caae1938230d5",
+    "url": "/my-app/static/js/1.7584ac1c.chunk.js"
   },
   {
     "revision": "a3bd857c0333674b1d75",
@@ -36,6 +36,10 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/wave.ace0902b.jpg"
   },
   {
+    "revision": "90855756747d4b6b4060a3b2fcdc1add",
+    "url": "/my-app/static/media/pytorch.90855756.jpg"
+  },
+  {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/my-app/static/media/logo.5d5d9eef.svg"
   },
@@ -44,7 +48,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/in.6976c96a.ico"
   },
   {
-    "revision": "89e2fb159e2b53c23a28206e612d8bcf",
+    "revision": "c665365f8a4e66b9188700a3c748b86d",
     "url": "/my-app/index.html"
   }
 ];
