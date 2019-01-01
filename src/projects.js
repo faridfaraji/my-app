@@ -21,7 +21,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
   render() {
       
     return (
-      <Link className = "link" to="/projects">Project</Link>
+      <Link className = "link" to="/projects">Projects</Link>
     );
 
 }

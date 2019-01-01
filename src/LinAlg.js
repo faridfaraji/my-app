@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
@@ -20,13 +20,13 @@ this.setStateHandler = this.setStateHandler.bind(this);
    }
  
   render() {
-      
+      var currentLocation = this.props.location.pathname;
     return (
         <div>
-        <Link className = "link" to="/Linear-Algebra">Linear Algebra</Link>
+        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>Linear Algebra</Link>
         </div> 
     );
   }
 }
 
-export default LinAlg;
+export default withRouter(LinAlg);

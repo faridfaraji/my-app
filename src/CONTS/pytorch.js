@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+
 import '../CSS/imagestyles.css';
 
 const CodeFrame = (props) => (
@@ -17,7 +18,7 @@ export const Introduction= (
         Numpy arrays. (Note: Tensors can simply be considered multidimensional arrays)
         </font> </p>
         <p><font size="4">
-        The advantage of using libraries like Pytorch and TensorFlow is that their tensors can used 
+        The advantage of using libraries like Pytorch and TensorFlow is that their tensors can be used 
         on a GPU that supports CUDA.
         </font> </p>
         <p><font size="4">
@@ -28,20 +29,16 @@ export const Introduction= (
         Lets go over some built in Pytorch functions we are going to need:
         <br/>
         <ul  className="ul" >
-      <li className="li">torch.mm() </li>
-       <li className="li">torch.randn((a,b))</li>
-      <li className="li">Milk</li>
-       </ul>
+      <li className="li">torch.mm(a,b) => this function multiplies the two matrices a and b</li>
+<li className="li">torch.randn((a,b)) => creates a random matrix of size (a,b)</li>
+      <li className="li">tensor.view(a,b) => reshape the matrix to a (a,b) shaped matrix</li>
        
+       </ul>
+       Note: to flatten a matrix, pass the first arg as first dimension and -1 as second arg.
         </font></p>
 
          </p>
-       <CodeFrame>
-       <pre><code>
-       y = activation(torch.mm(features, weights.view(5,1)) + bias)
-
-       </code></pre>
-       </CodeFrame>
+       
 </div>
        
 )
@@ -51,7 +48,13 @@ export const NeuralNetPytorch=(
 
 <div>
         <p className="textStyle"> Neural Networks in Pytorch: </p>
-       <CodeFrame>
+       <CodeFrame >
+       <pre>
+       <code>
+       <p className= "codeStyle">y = activation(torch.mm(features, weights.view(5,1)) + bias)</p>
+
+       </code>
+       </pre>
        </CodeFrame>
 </div>
 

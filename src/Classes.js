@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
@@ -10,7 +10,7 @@ class Classes extends Component{
 constructor() {
     super()
     this.state = {
-      
+      hide: false
     }
 this.setStateHandler = this.setStateHandler.bind(this);
 
@@ -20,14 +20,39 @@ this.setStateHandler = this.setStateHandler.bind(this);
    }
  
   render() {
-      
+      var currentLocation = this.props.location.pathname;
     return (
         <div>
-        <Link className = "link" to="/topics">Classes</Link>
+        <Link className = "link" onClick={this.setStateHandler.bind(this)}  to={currentLocation}>Classes</Link>
+        {this.state.hide && <Sublinks/>}
         </div> 
     );
   }
 }
+
+
+const TOPICS = [
+  { id: 0, topic: "CPSC 313", subs: [] },
+  { id: 1, topic: "CPSC 317", subs: [1, 3] },
+  { id: 2, topic: "CPSC 320", subs: [0, 1, 3] },
+  { id: 3, topic: "CPSC 340", subs: [1, 2] },
+  {id: 4, topic: "CPSC 406", subs: [1, 2]},
+  { id: 5, topic: "CPSC 415", subs: [1, 2]},
+  { id: 6, topic: "CPSC 417", subs: [1, 2]}
+  
+  
+];
+
+
+const Sublinks = () => ( TOPICS.map((TOPIC) =>
+    <ul className = "bullet">    
+    <li key={TOPIC.id} >
+    <Link className = "list"  to={"/topics"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
+ 
+    </li>
+    </ul>
+     )
+)
 
 
 
@@ -78,5 +103,5 @@ const Main = (props) => (
 )
 
 
-export default Classes;
+export default withRouter(Classes);
 

@@ -6,7 +6,7 @@ import './CSS/textStyles.css';
 
 
 
-class Sys extends Component{
+class InterComp extends Component{
 constructor() {
     super()
     this.state = {
@@ -23,7 +23,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
       var currentLocation = this.props.location.pathname;
     return (
         <div>
-        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>Systems</Link>
+        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>Internet Computing</Link>
         </div> 
     );
   }
@@ -39,4 +39,4 @@ const Main = (props) => (
     </div>
 )
 
-export default withRouter(Sys);
+export default withRouter(InterComp);

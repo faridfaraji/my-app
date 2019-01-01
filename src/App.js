@@ -18,6 +18,7 @@ import LinAlg from './LinAlg.js';
 import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
 import Oper from './OperSys.js';
+import InterComp from './Intercomp.js';
 
 class App extends Component{
 
@@ -41,21 +42,13 @@ constructor(props) {
 
     render() {
 
-        const Sublinks = () => ( this.datas.map((data) =>
-    <ul className = "bullet">    
-    <li key={data.id} >
-    <Link className = "list"  to={"/deep-learning"+'/'+this.datas.name}>{this.datas.name}</Link>
- 
-    </li>
-    </ul>
-     )
-)
- 
+
       return (
          
-   <Router>     
+   <Router basename={process.env.PUBLIC_URL}>     
          <Root>
         <div>
+        <Sidebar>
       <div className= "big">
       
         <ul>
@@ -80,10 +73,12 @@ constructor(props) {
         <hr />
         <Projects/>
         <hr/>
-        {this.state.hide && <Sublinks/>}
+        <InterComp/>
+        <hr/>
+        
         </ul>
       </div>
-     <Sidebar>
+     
      </Sidebar>
 
        
@@ -92,13 +87,14 @@ constructor(props) {
 
     </div>
         <Main>
-        <Route exact path="/my-app" component={ShowHome} />
+        <Route exact path="/" component={ShowHome} />
         <Route path="/about" component={ShowAbout} />
         <Route path="/topics" component={Topics} />
         <Route path="/projects" component={ShowContent} />
         <Route path="/machine-learning/Data Science" component={Regularization} />
         <Route path="/deep-learning/Project" component={deepLearnProject} />
         <Route path="/deep-learning/Pytorch" component={Pytorch} />
+
         </Main>
         </Root>
     </Router>);

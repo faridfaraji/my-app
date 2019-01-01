@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
@@ -20,13 +20,13 @@ this.setStateHandler = this.setStateHandler.bind(this);
    }
  
   render() {
-      
+      var currentLocation = this.props.location.pathname;
     return (
         <div>
-        <Link className = "link" to="/MLV-Calc">MLV Calculus</Link>
+        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>MLV Calculus</Link>
         </div> 
     );
   }
 }
 
-export default MLVCalc;
+export default withRouter(MLVCalc);

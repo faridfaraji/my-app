@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import mypic from './IMG/mypic.jpg';
+import facebook from './IMG/facebook.ico';
+import linkedin from './IMG/in.ico';
 import shikhar from './IMG/shikhar.jpg';
 import './CSS/imagestyles.css'; 
 import Fade from 'react-reveal/Fade';
 import './CSS/About.css'
+
 
 
 class About extends Component{
@@ -30,26 +33,54 @@ this.setStateHandler = this.setStateHandler.bind(this);
   }
 }
 export function ShowAbout(){
+
+  const url1 = "https://www.facebook.com/farid.faraji.54";
+  const url2="https://www.facebook.com/shikhar.nandi";
+  const Inurl1 = "https://www.linkedin.com/in/farid-f-60265680";
     return (
       
     <Fade duration={1500}>
+
+    
   
       <div>
        <img className = 'myimg' src={mypic} alt="Mypic"/>
        <img className = 'shikhar' src={shikhar} alt="Shikharpic"/></div>
       
-     <div>  
+     
     
-     <Description1>
-        <p className="abouttext"> Farid's Bio </p>
-       </Description1>  
-      </div>
       <div>
        <Description2>
-        <p className="abouttext"> Shikhar's Bio </p>
+        <p className="abouttext"> Hi, I am Shikhar, my bio is about to come 
+        </p>
+        <div className = "facebook2">
+       <a href={url2}>
+       <img  src={facebook} alt="Mypic"/>
+       </a>
+       </div>
+       
         </Description2>
        </div>
 
+        <div>  
+     <Description1>
+        <p className="abouttext"> Hi, My name is Farid, I am a CS undergrad student at the university 
+        of British Columbia located in Vancouver, My interests lie in Computaional Optimization, 
+        Data Mining, Unsupervised learning and also Parallel Computation, Distributed systems.
+        </p>
+        <div className = "facebook1">
+          <a href={url1}>
+       <img  src={facebook} alt="Mypic"/>
+       </a></div>
+    
+        
+       </Description1>   
+      </div>
+      
+      
+        
+
+      
       </Fade> 
     
     );

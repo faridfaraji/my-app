@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link,withRouter } from "react-router-dom";
 import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
@@ -25,12 +25,13 @@ this.setStateHandler = this.setStateHandler.bind(this);
  
  
   render() {
+      var currentLocation = this.props.location.pathname;
     return (
     
         <div>
        
         <Link className = "link-ml" onClick={this.setStateHandler.bind(this)}
-        to="/machine-learning">Machine Learning</Link>
+        to={currentLocation}>Machine Learning</Link>
         {this.state.hide && <Sublinks/>} 
          
         </div> 
@@ -105,4 +106,4 @@ const Main = (props) => (
 
 
 
-export default MachineLearning;
+export default withRouter(MachineLearning);
