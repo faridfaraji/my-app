@@ -6,7 +6,9 @@ import './CSS/textStyles.css';
 import axios from 'axios';
 import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/pytorch.js';
 import {CNNIntro} from './CONTS/CNN.js';
-
+import {NeurNetIntro} from './CONTS/NeuralNet.js';
+import {tensorIntro} from './CONTS/TensorFlow.js';
+import {RNNIntro} from './CONTS/RNN.js';
 
 
 class DeepLearning extends Component{
@@ -50,7 +52,7 @@ const TOPICS = [
 const Sublinks = () => ( TOPICS.map((TOPIC) =>
     <ul className = "bullet">    
     <li key={TOPIC.id} >
-    <Link className = "list" to= { "/deep-learning"+'/'+TOPIC.topic}
+    <Link   className = "list" to= { "/deep-learning"+'/'+TOPIC.topic}
     >{TOPIC.topic}</Link>
  
     </li>
@@ -81,10 +83,19 @@ nextPage(){
 var length;
   switch(this.props.foo){
     case 0:
-      length = PagesCNN.length-1;
+      length = PagesNeurNet.length-1;
       break;
     case 1:
-      length = PagesPytorch.length-1;
+      length = PagesCNN.length-1;
+      break;
+    case 2:
+      length = PagesRNN.length-1;
+      break;  
+    case 3:
+      length =  PagesPytorch.length-1;
+      break;
+    case 4:
+      length =  PagesTensorFlow.length-1;  
 
   }
 
@@ -106,9 +117,16 @@ showContents(){
 
   switch(this.props.foo){
     case 0:
-      return  (PagesCNN.slice(this.state.i,this.state.i+1));
+      return  (PagesNeurNet.slice(this.state.i,this.state.i+1));
     case 1:
-      return  (PagesPytorch.slice(this.state.i,this.state.i+1));
+      return  (PagesCNN.slice(this.state.i,this.state.i+1));
+    case 2:
+      return  (PagesRNN.slice(this.state.i,this.state.i+1));
+    case 3:
+      return  (PagesPytorch.slice(this.state.i,this.state.i+1));  
+    case 4:
+      return  (PagesTensorFlow.slice(this.state.i,this.state.i+1));  
+  
 
   }
 
@@ -157,13 +175,19 @@ CNNIntro
 
 ];
 
+var PagesNeurNet = [
+ NeurNetIntro
 
 
+];
 
 
+var PagesTensorFlow =[
+tensorIntro
+];
 
 
-
+var PagesRNN = [RNNIntro];
 
 
 /// THIS IS deepLearnProject Link

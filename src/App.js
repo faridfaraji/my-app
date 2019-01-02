@@ -19,6 +19,10 @@ import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
 import Oper from './OperSys.js';
 import InterComp from './Intercomp.js';
+import AlgoDesign from './Algodesign.js';
+import {TiChevronLeft, TiChevronRight} from 'react-icons/ti';
+
+
 
 class App extends Component{
 
@@ -50,16 +54,18 @@ constructor(props) {
          <Root>
         <div>
         <Sidebar>
+        
       <div className= "big">
       
         <ul>
-        
     <Home />
         <hr />
        <About />
         <hr />
        <Classes/>
         <hr />
+        <AlgoDesign/>
+        <hr/>
        <MachineLearning />
         <hr />
        <DeepLearning/>
@@ -94,8 +100,11 @@ constructor(props) {
         <Route path="/projects" component={ShowContent} />
         <Route path="/machine-learning/Data Science" component={Regularization} />
         <Route path="/deep-learning/Project" component={deepLearnProject} />
-        <Route path="/deep-learning/Pytorch" render={(props) => <DeepConts {...props} foo={1} /> }/>
-        <Route path="/deep-learning/CNN" render={(props) => <DeepConts {...props} foo={0} /> }/>
+        <Route path="/deep-learning/Pytorch" render={(props) => <DeepConts {...props} foo={3} /> }/>
+        <Route path="/deep-learning/CNN" render={(props) => <DeepConts {...props} foo={1} /> }/>
+        <Route path="/deep-learning/Neural Networks" render={(props) => <DeepConts {...props} foo={0} /> }/>
+        <Route path="/deep-learning/TensorFlow" render={(props) => <DeepConts {...props} foo={4} /> }/>
+         <Route path="/deep-learning/RNN" render={(props) => <DeepConts {...props} foo={2} /> }/>
         </Main>
         </Root>
     </Router>);

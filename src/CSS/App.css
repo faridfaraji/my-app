@@ -170,3 +170,15 @@ font-size: 2rem;
     transform: rotate(360deg);
   }
 }
+
+
+
+.sidebarToggle{ 
+font-family: "Courier";
+   color: #FEFEFE; 
+   padding-top: 15px;
+  padding-left: 300px;
+font-size: 3em;
+line-height: 0.000;
+
+}

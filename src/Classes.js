@@ -32,13 +32,14 @@ this.setStateHandler = this.setStateHandler.bind(this);
 
 
 const TOPICS = [
-  { id: 0, topic: "CPSC 313", subs: [] },
-  { id: 1, topic: "CPSC 317", subs: [1, 3] },
-  { id: 2, topic: "CPSC 320", subs: [0, 1, 3] },
-  { id: 3, topic: "CPSC 340", subs: [1, 2] },
-  {id: 4, topic: "CPSC 406", subs: [1, 2]},
-  { id: 5, topic: "CPSC 415", subs: [1, 2]},
-  { id: 6, topic: "CPSC 417", subs: [1, 2]}
+  { id: 0 ,topic: "CPSC 303"},
+  { id: 1, topic: "CPSC 313"},
+  { id: 2, topic: "CPSC 317"},
+  { id: 3, topic: "CPSC 320"},
+  { id: 4, topic: "CPSC 340" },
+  {id: 5, topic: "CPSC 406"},
+  { id: 6, topic: "CPSC 415"},
+  { id: 7, topic: "CPSC 417"}
   
   
 ];

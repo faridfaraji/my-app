@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ReactResizeDetector from 'react-resize-detector';
 import homestyle from './IMG/wave.jpg'
-
+import homestyle2 from './IMG/pytorch.jpg'
 
 
 class Home extends Component{
@@ -69,6 +69,10 @@ return(
  </Background2><div className="rectangle3">
  <img src={homestyle} alt="Mypic"/>
  </div>  
+
+ <div className="rectangle4">
+ <img src={homestyle2} alt="Mypic"/>
+ </div> 
  </div>
   </div>
  
