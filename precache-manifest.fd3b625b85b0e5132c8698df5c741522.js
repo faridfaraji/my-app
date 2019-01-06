@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "f784feb6df04708643b6",
-    "url": "/my-app/static/css/main.481f9004.chunk.css"
+    "revision": "09d6901aefb0abb1494f",
+    "url": "/my-app/static/css/main.082f6afe.chunk.css"
   },
   {
-    "revision": "f784feb6df04708643b6",
-    "url": "/my-app/static/js/main.f784feb6.chunk.js"
+    "revision": "09d6901aefb0abb1494f",
+    "url": "/my-app/static/js/main.09d6901a.chunk.js"
   },
   {
     "revision": "7c0e8c21cecdf2becefd",
@@ -40,8 +40,8 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/pytorch.90855756.jpg"
   },
   {
-    "revision": "ac3ba1eff61015503378e173e65de4dd",
-    "url": "/my-app/static/media/graph.ac3ba1ef.png"
+    "revision": "db2af8b8a3803025fd725e5155eeb274",
+    "url": "/my-app/static/media/graph.db2af8b8.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -56,7 +56,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/RepProb.ce856c90.png"
   },
   {
-    "revision": "1911c61bcbe99c92138bf2ac4248cf60",
+    "revision": "0765f59e37a396e91a77c755ac99981e",
     "url": "/my-app/index.html"
   }
 ];
