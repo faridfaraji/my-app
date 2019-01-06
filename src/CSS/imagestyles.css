@@ -95,7 +95,6 @@ height: auto;
  margin-top:40px; 
  margin-left: 50px;
 border-radius: 10px;
-width: calc(80vw-340px);
 height: 400px;
 background: #3F3E3C;
 overflow:scroll;
@@ -114,7 +113,7 @@ overflow:scroll;
 }
 .rectangle3{
  margin-top:-300px; 
- margin-left: 650px;
+ margin-left: 610px;
 border-radius: 10px;
 width: 300px;
 height: 500px;
@@ -166,7 +165,7 @@ border-width: 1.5px;
 border-radius: 30px;
 color: #4c4743;
 margin-left: 550px;
-margin-top:-200px;
+margin-top:-440px;
 width: 300px;
 height: 100px;
 
@@ -245,6 +244,14 @@ background: #d31944;
 margin-left: 50px;
 }
 
+.code-frame3 {
+ border-radius: 15px;
+width: 800px;
+background: #f2f221;
+margin-left: 50px;
+}
+
+
 
 
 .space{
@@ -271,6 +278,13 @@ border-radius: 20px;
 
 
 
+    }
+
+
+    .aboutpos{
+
+
+      margin-left: calc(4vw);
     }
 
 

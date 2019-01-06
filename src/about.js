@@ -42,7 +42,7 @@ export function ShowAbout(){
     <Fade duration={1500}>
 
     
-  
+  <div className ="aboutpos">
       <div>
        <img className = 'myimg' src={mypic} alt="Mypic"/>
        <img className = 'shikhar' src={shikhar} alt="Shikharpic"/></div>
@@ -77,7 +77,7 @@ export function ShowAbout(){
        </Description1>   
       </div>
       
-      
+      </div>
         
 
       

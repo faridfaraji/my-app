@@ -8,7 +8,7 @@ import {CNNIntro} from './CONTS/CNN.js';
 import {NeurNetIntro} from './CONTS/NeuralNet.js';
 import {tensorIntro} from './CONTS/TensorFlow.js';
 import {RNNIntro} from './CONTS/RNN.js';
-import {RepProblem} from './CONTS/RepProb.js';
+import {RepProblem, RepProblem2} from './CONTS/RepProb.js';
 
 
 
@@ -139,7 +139,7 @@ render() {
 
 
 var PagesRepProblem = [
- RepProblem
+ RepProblem,RepProblem2
   
 ];
 

@@ -96,7 +96,7 @@ const Main = (props) => (
 
 const Background = (props) => (
     
-<div className = "rectangle" {...props} />)
+<div className = "rectangle"  {...props} />)
 
 
 const Background2 = (props) => (
