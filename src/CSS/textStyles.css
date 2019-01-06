@@ -30,6 +30,18 @@ color:#000;
 
 }
 
+
+.minitextStyle{
+font-family: "Courier";
+font-size: 1em;
+padding-left: 20px;
+padding-right: 30px; 
+line-height: 20px;
+color:#F8F9F8;
+
+
+}
+
 .bullet{
 
 
@@ -73,6 +85,7 @@ color: #cccc00;
 .codeStyle{
   padding-left:15px;
    padding-top:10px;
+  padding-bottom: 10px;
 font-family: monospace;
 color: #000;
 font-size: 18px;

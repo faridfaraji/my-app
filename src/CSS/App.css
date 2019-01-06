@@ -27,23 +27,14 @@
    font-size: 2rem;
 }
 
-
-.Root{
-
-color: #eee;
-
-
-
-
-}
 .Sidebar {
+
   
 margin-top : 20px;
 margin-left: 30px;
 margin-bottom: 20px;
 border-radius: 10px;
 width: 340px;
-height: 500px;
 background: #777776;
 overflow: scroll;
 
@@ -54,7 +45,7 @@ overflow: scroll;
 
 @media screen and (max-height:1000px) {
   .Sidebar {
-    height:310vh;
+    height:190vh;
     
   }
 }

@@ -134,6 +134,8 @@ showContents(){
 }
 
 
+
+
 render() {
 
   var currentLocation = this.props.location.pathname;
@@ -146,7 +148,7 @@ render() {
       </Frame>
           
      <Link onClick={(e) =>this.previousPage(e)}  to={currentLocation} >
-       <button  className="paginationPrev">
+       <button className="paginationPrev">
         <p>Previous</p>
      </button>
        </Link>

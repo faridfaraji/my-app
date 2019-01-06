@@ -14,14 +14,13 @@ import Home, {ShowHome} from './Home.js';
 import MachineLearning, {Regularization} from './MachineLearning.js';
 import Classes, {Topics}from './Classes.js';
 import DeepLearning, {deepLearnProject, DeepConts} from './DeepLearning.js';
-import LinAlg from './LinAlg.js';
+import LinAlg, {LinAlgConts} from './LinAlg.js';
 import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
 import Oper from './OperSys.js';
 import InterComp from './Intercomp.js';
-import AlgoDesign from './Algodesign.js';
+import AlgoDesign, {AlgConts} from './Algodesign.js';
 import {TiChevronLeft, TiChevronRight} from 'react-icons/ti';
-
 
 
 class App extends Component{
@@ -49,9 +48,9 @@ constructor(props) {
 
 
       return (
-         
+     <div >    
    <Router basename={process.env.PUBLIC_URL}>     
-         <Root>
+         <Root >
         <div>
         <Sidebar>
         
@@ -90,7 +89,6 @@ constructor(props) {
 
        
         
-        
 
     </div>
         <Main>
@@ -105,9 +103,13 @@ constructor(props) {
         <Route path="/deep-learning/Neural Networks" render={(props) => <DeepConts {...props} foo={0} /> }/>
         <Route path="/deep-learning/TensorFlow" render={(props) => <DeepConts {...props} foo={4} /> }/>
          <Route path="/deep-learning/RNN" render={(props) => <DeepConts {...props} foo={2} /> }/>
+         <Route path="/Algorithm-design/Stable Matching" render={(props) => <AlgConts {...props} foo={0} /> }/>
+         <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={0} /> }/>
         </Main>
         </Root>
-    </Router>);
+    </Router>
+    </div>    
+    );
   }
 }
 
@@ -141,8 +143,9 @@ const titles = () => ( TITLES.map((TITLE) =>
 
 
 const Root = (props) => (
-<div style={{
+<div  style={{
     display: 'flex'
+    
 }} {...props}/>
 )
 
