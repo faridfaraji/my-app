@@ -20,6 +20,17 @@ line-height: 40px;
 color:#F8F9F8;
 }
 
+
+.textStylesmall{
+display: inline-block;
+font-family: "Courier";
+padding-left: 40px;
+padding-right: 30px; 
+line-height:24px;
+color:#F8F9F8;
+
+}
+
 .textStyle2{
 font-family: "Courier";
 font-size: 1.5em;
@@ -92,6 +103,18 @@ font-size: 18px;
 
 }
 
+.pageNum{
+
+font-family: "Courier";
+color: white;
+margin-left: 50px;
+font-size: 20px;
+text-decoration: none;
+
+
+ 
+}
+
 
 .indent1 {
   margin-left: 30px;
@@ -103,6 +126,10 @@ font-size: 18px;
   margin-left: 90px;
 }
 
+.buttontext{
 
+
+  color : white;
+}
 
 

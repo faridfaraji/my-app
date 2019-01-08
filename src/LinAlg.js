@@ -123,7 +123,7 @@ render() {
           
      <Link onClick={(e) =>this.previousPage(e)}  to={currentLocation} >
        <button className="paginationPrev">
-        <p>Previous</p>
+        <p className="buttontext">Previous</p>
      </button>
        </Link>
        
@@ -132,8 +132,8 @@ render() {
        
    <Link onClick={(e) =>this.nextPage(e)} to={currentLocation} > 
    <button className="paginationNext">
-        <p>Next</p>
-     </button> </Link>
+        <p className="buttontext">Next</p>
+     </button > </Link>
         </div> 
     );
   }

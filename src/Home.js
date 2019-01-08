@@ -66,9 +66,17 @@ return(
  the courses, we have added guidance to succeed in the coursed and bunch of 
  practice questions with solutions.
   </p>
- </Background2><div className="rectangle3">
+ 
+ </Background2>
+ <div>
+ <div className="rectangle3">
  <img src={homestyle} alt="Mypic"/>
+ <div className="rectangle5">
+ </div>
  </div>  
+ 
+ </div>
+
 
  <div className="rectangle4">
  <img src={homestyle2} alt="Mypic"/>

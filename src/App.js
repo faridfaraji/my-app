@@ -12,16 +12,16 @@ import Projects,{ShowContent} from './Projects.js';
 import About, {ShowAbout} from './About.js';
 import Home, {ShowHome} from './Home.js';
 import MachineLearning, {Regularization} from './MachineLearning.js';
-import Classes, {Topics}from './Classes.js';
+import Classes, {Topics, ClassesConts}from './Classes.js';
 import DeepLearning, {deepLearnProject, DeepConts} from './DeepLearning.js';
 import LinAlg, {LinAlgConts} from './LinAlg.js';
 import MLVCalc from './MLVCalc.js';
 import Sys from './Systems.js';
 import Oper from './OperSys.js';
-import InterComp from './Intercomp.js';
+import InterComp, {InternetConts} from './Intercomp.js';
 import AlgoDesign, {AlgConts} from './Algodesign.js';
 import {TiChevronLeft, TiChevronRight} from 'react-icons/ti';
-
+import LinProg from './LinearProg.js';
 
 class App extends Component{
 
@@ -61,6 +61,8 @@ constructor(props) {
         <hr />
        <About />
         <hr />
+       <Projects/>
+        <hr/>
        <Classes/>
         <hr />
         <AlgoDesign/>
@@ -69,21 +71,21 @@ constructor(props) {
         <hr />
        <DeepLearning/>
         <hr />
-       <LinAlg/>
-        <hr />
-        <MLVCalc/>
-        <hr />
         <Sys/>
         <hr />
         <Oper/>
         <hr />
-        <Projects/>
-        <hr/>
         <InterComp/>
         <hr/>
-        
+        <LinProg/>
+        <hr/>
+         <LinAlg/>
+        <hr />
+        <MLVCalc/>
+        <hr />
         </ul>
       </div>
+
      
      </Sidebar>
 
@@ -105,6 +107,19 @@ constructor(props) {
          <Route path="/deep-learning/RNN" render={(props) => <DeepConts {...props} foo={2} /> }/>
          <Route path="/Algorithm-design/Stable Matching" render={(props) => <AlgConts {...props} foo={0} /> }/>
          <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={0} /> }/>
+      <Route path="/internet-computing/introduction" render={(props) => <InternetConts {...props} foo={0} /> }/>
+      <Route path="/internet-computing/Application Layer" render={(props) => <InternetConts {...props} foo={1} /> }/>
+
+
+
+       <Route path="/classes/CPSC 303" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 313" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 320" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 317" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 340" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 406" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 415" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 417" render={(props) => <ClassesConts {...props} foo={0} /> }/>
         </Main>
         </Root>
     </Router>

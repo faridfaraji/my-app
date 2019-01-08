@@ -64,9 +64,10 @@ export function ShowAbout(){
 
         <div>  
      <Description1>
-        <p className="abouttext"> Hi, My name is Farid, I am a CS undergrad student at the university 
+        <p className="abouttext"> Hi, My name is Farid, I am the creator of CSNotes I 
+        am a CS undergrad student at the university 
         of British Columbia located in Vancouver, My interests lie in Computaional Optimization, 
-        Data Mining, Unsupervised learning and also Parallel Computation, Distributed systems.
+        Data Mining, Unsupervised learning and also Parallel Computation, Distributed systems. <Link  to="/" >More about me</Link>
         </p>
         <div className = "facebook1">
           <a href={url1}>

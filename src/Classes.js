@@ -10,16 +10,41 @@ class Classes extends Component{
 constructor() {
     super()
     this.state = {
+      hide2: false,
       hide: false
     }
+this.setStateHandler2 = this.setStateHandler2.bind(this);    
 this.setStateHandler = this.setStateHandler.bind(this);
 
 }
+setStateHandler2() {
+      this.setState({hide2: !this.state.hide2})
+   }
+
+
+
   setStateHandler() {
       this.setState({hide: !this.state.hide})
    }
+
+  
  
   render() {
+
+
+    const Sublinks = () => ( TOPICS.map((TOPIC) =>
+    <ul className = "bullet">    
+    <li key={TOPIC.id} >
+    <Link className = "list"  onClick={this.setStateHandler2.bind(this)} to={"/classes"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
+   {this.state.hide2 && 
+     <Route path={"/classes"+'/'+TOPIC.topic} render={(props) => <Subsises {...props} foo={0} /> }/>}
+
+    </li>
+    </ul>
+     )
+)
+
+
       var currentLocation = this.props.location.pathname;
     return (
         <div>
@@ -45,17 +70,124 @@ const TOPICS = [
 ];
 
 
-const Sublinks = () => ( TOPICS.map((TOPIC) =>
-    <ul className = "bullet">    
-    <li key={TOPIC.id} >
-    <Link className = "list"  to={"/topics"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
- 
-    </li>
+
+
+
+
+///%%%%%%%%%%%%%%%%%%%%%%%%%********************************
+///%%%%%%%%%%%%%%%%%%%%%%%%%********************************
+///%%%%%%%%%%%%%%%%%%%%%%%%%********************************
+///%%%%%%%%%%%%%%%%%%%%%%%%%********************************
+///%%%%%%%%%%%%%%%%%%%%%%%%%********************************
+
+
+
+export class ClassesConts extends Component {
+constructor(props) {
+    super(props)
+    this.state = {
+      i: 0,
+      hide: false
+    }
+    this.setStateHandler = this.setStateHandler.bind(this);
+
+}
+
+
+
+setStateHandler() {
+      this.setState({hide: !this.state.hide})
+   }
+
+
+nextPage(){
+var length;
+  switch(this.props.foo){
+    case 0:
+      length = Pages1.length-1;
+  
+
+  }
+
+
+ if (this.state.i != length)
+this.setState({ i: this.state.i + 1 });
+
+}
+
+previousPage(){
+  if (this.state.i !=0)
+  this.setState({ i: this.state.i - 1 });
+
+
+
+}
+
+showContents(){
+
+  switch(this.props.foo){
+    case 0:
+      return  (Pages1.slice(this.state.i,this.state.i+1));
+      
+  
+
+  }
+
+}
+
+
+
+
+render() {
+
+  var currentLocation = this.props.location.pathname;
+    return (
+      <div>
+        <Frame>
+        
+       {this.showContents()}
+       
+      </Frame>
+          
+     <Link onClick={(e) =>this.previousPage(e)}  to={currentLocation} >
+       <button className="paginationPrev">
+        <p className="buttontext">Previous</p>
+     </button>
+       </Link>
+       
+        <Link className="pageNum" to={currentLocation} >{this.state.i+1}</Link>
+    
+       
+   <Link onClick={(e) =>this.nextPage(e)} to={currentLocation} > 
+   <button className="paginationNext">
+        <p className="buttontext">Next</p>
+     </button > </Link>
+        </div> 
+    );
+  }
+
+
+}
+
+var Pages1 = [
+    
+  
+];
+export function Subsises({match}){
+
+return (
+  <div>
+  <ul>
+   <li>
+<Link to={`${match.url}`}>Reviews</Link>
+  </li>
+    <li>
+<Link to={`${match.url}`}>Practice</Link>
+  </li>
     </ul>
-     )
-)
-
-
+</div>
+);
+}
 
 
 export function Topics({match}) {
@@ -103,6 +235,13 @@ const Main = (props) => (
     </div>
 )
 
+
+
+const Frame = (props) => (
+<div className = "frame" {...props} />)
+
+const CodeFrame = (props) => (
+<div className = "code-frame" {...props} />)
 
 export default withRouter(Classes);
 

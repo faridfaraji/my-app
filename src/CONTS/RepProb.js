@@ -52,6 +52,12 @@ export const RepProblem=(
        with the element to which <br/>they are currently matched.
 
          </font> </p>
+          <p className="textStyle"> <font size="4">
+       We also call a matching Perfect if there is  <br/>  no element 
+       that does not belong to a pairs, A stable matching is perfect.<br/>
+
+         </font> </p>
+
 
           <p className="textStyle"> <font size="4">
          we can as an example look at the stable marriage  <br/>
