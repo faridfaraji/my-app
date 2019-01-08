@@ -49,3 +49,14 @@ the packets that are sent and received among routers and end systems</font>
 </div>
 
 )
+
+
+
+export const InternetIntro2=(
+<div>
+ <p className="textStyle">More on Protocols:
+</p>
+
+</div>
+
+)
