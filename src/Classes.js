@@ -10,15 +10,26 @@ class Classes extends Component{
 constructor() {
     super()
     this.state = {
+      prevTop: "FF",
       hide2: false,
       hide: false
     }
-this.setStateHandler2 = this.setStateHandler2.bind(this);    
+//this.setStateHandler2 = this.setStateHandler2.bind(this);    
 this.setStateHandler = this.setStateHandler.bind(this);
 
 }
-setStateHandler2() {
+setStateHandler2(top) {
+  var prev = this.state.prevTop;
+ if (prev != "CPSC 303" &&prev != "CPSC 313"&&prev != "CPSC 340"&&
+ prev != "CPSC 320" &&prev != "CPSC 417"&& prev != "CPSC 406"&&
+ prev != "CPSC 417"&&prev != "CPSC 317"){
+
+   prev = top;
+ }
+  if (prev == top)
       this.setState({hide2: !this.state.hide2})
+  else this.setState({hide2: true})
+  this.state.prevTop = top;
    }
 
 
@@ -27,7 +38,8 @@ setStateHandler2() {
       this.setState({hide: !this.state.hide})
    }
 
-  
+
+   
  
   render() {
 
@@ -35,7 +47,7 @@ setStateHandler2() {
     const Sublinks = () => ( TOPICS.map((TOPIC) =>
     <ul className = "bullet">    
     <li key={TOPIC.id} >
-    <Link className = "list"  onClick={this.setStateHandler2.bind(this)} to={"/classes"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
+    <Link className = "list"  onClick={() => this.setStateHandler2(TOPIC.topic)} to={"/classes"+'/'+TOPIC.topic}>{TOPIC.topic}</Link>
    {this.state.hide2 && 
      <Route path={"/classes"+'/'+TOPIC.topic} render={(props) => <Subsises {...props} foo={0} /> }/>}
 
@@ -86,6 +98,7 @@ export class ClassesConts extends Component {
 constructor(props) {
     super(props)
     this.state = {
+      prevTopic: "",
       i: 0,
       hide: false
     }
@@ -127,8 +140,8 @@ showContents(){
 
   switch(this.props.foo){
     case 0:
-      return  (Pages1.slice(this.state.i,this.state.i+1));
-      
+      return  this.state.prevTopic;
+     // Pages1.slice(this.state.i,this.state.i+1)
   
 
   }

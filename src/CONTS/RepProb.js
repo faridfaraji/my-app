@@ -62,8 +62,8 @@ export const RepProblem=(
           <p className="textStyle"> <font size="4">
          we can as an example look at the stable marriage  <br/>
          problem as an example, consider a 
-         set <br/> M =[m <sub>1</sub>, ... ,m<sub>n</sub>] of n men, and a set 
-       of n women,<br/> W =[w <sub>1</sub>,... ,w<sub>n</sub>]
+         set <br/> M =[m<sub>1</sub>, ... ,m<sub>n</sub>] of n men, and a set 
+       of n women,<br/> W =[w<sub>1</sub>,... ,w<sub>n</sub>]
 
 
          </font> </p>       

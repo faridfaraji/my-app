@@ -113,13 +113,13 @@ constructor(props) {
 
 
        <Route path="/classes/CPSC 303" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 313" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 320" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 317" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 340" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 406" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 415" render={(props) => <ClassesConts {...props} foo={0} /> }/>
-       <Route path="/classes/CPSC 417" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+       <Route path="/classes/CPSC 313" render={(props) => <ClassesConts {...props} foo={1} /> }/>
+       <Route path="/classes/CPSC 320" render={(props) => <ClassesConts {...props} foo={2} /> }/>
+       <Route path="/classes/CPSC 317" render={(props) => <ClassesConts {...props} foo={3} /> }/>
+       <Route path="/classes/CPSC 340" render={(props) => <ClassesConts {...props} foo={4} /> }/>
+       <Route path="/classes/CPSC 406" render={(props) => <ClassesConts {...props} foo={5} /> }/>
+       <Route path="/classes/CPSC 415" render={(props) => <ClassesConts {...props} foo={6} /> }/>
+       <Route path="/classes/CPSC 417" render={(props) => <ClassesConts {...props} foo={7} /> }/>
         </Main>
         </Root>
     </Router>
