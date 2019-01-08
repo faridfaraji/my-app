@@ -28,18 +28,20 @@
 }
 
 .Sidebar {
-
-  
+box-sizing: border-box;  
+border: 1.5px solid #C0C0C0; 
 margin-top : 20px;
 margin-left: 30px;
 margin-bottom: 20px;
 border-radius: 10px;
-width: 340px;
+width: 360px;
 background: #777776;
 overflow: scroll;
 
 
 }
+
+
 
 
 

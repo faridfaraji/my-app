@@ -106,6 +106,8 @@ constructor(props) {
         <Route path="/deep-learning/TensorFlow" render={(props) => <DeepConts {...props} foo={4} /> }/>
          <Route path="/deep-learning/RNN" render={(props) => <DeepConts {...props} foo={2} /> }/>
          <Route path="/Algorithm-design/Stable Matching" render={(props) => <AlgConts {...props} foo={0} /> }/>
+         <Route path="/Algorithm-design/Representative Problems" render={(props) => <AlgConts {...props} foo={1} /> }/>
+
          <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={0} /> }/>
       <Route path="/internet-computing/introduction" render={(props) => <InternetConts {...props} foo={0} /> }/>
       <Route path="/internet-computing/Application Layer" render={(props) => <InternetConts {...props} foo={1} /> }/>

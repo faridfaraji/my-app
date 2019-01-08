@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import '../CSS/imagestyles.css';
+import '../../CSS/imagestyles.css';
 
 const CodeFrame = (props) => (
 <div className = "code-frame" {...props} />)
 
 
 
-export const tensorIntro=(
+export const CNNIntro=(
 
 <div>
-        <p className="textStyle"> TensorFlow Introduction: </p>
+        <p className="textStyle"> CNN Introduction: </p>
        <CodeFrame >
        <pre>
        <code>

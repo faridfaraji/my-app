@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
-import {LinEquat1} from './CONTS/LinearEquation.js';
+import {LinEquat1} from './CONTS/LinearAlgebra/LinearEquation.js';
 
 
 

@@ -3,12 +3,8 @@ import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
-import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/pytorch.js';
-import {CNNIntro} from './CONTS/CNN.js';
-import {NeurNetIntro} from './CONTS/NeuralNet.js';
-import {tensorIntro} from './CONTS/TensorFlow.js';
-import {RNNIntro} from './CONTS/RNN.js';
-import {RepProblem, RepProblem2} from './CONTS/RepProb.js';
+
+import {StableMatching, StableMatching2,RepProblem0} from './CONTS/AlgoDesign/RepProb.js';
 
 
 
@@ -39,7 +35,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
 
 const TOPICS = [
   { id: 0, topic: "Stable Matching", subs: [] },
-  
+  { id: 1, topic: "Representative Problems", subs: [] },
   
 ];
 
@@ -72,6 +68,9 @@ nextPage(){
 var length;
   switch(this.props.foo){
     case 0:
+      length = PagesStableMatching.length-1;
+      break;
+    case 1:
       length = PagesRepProblem.length-1;
       break;
    
@@ -96,7 +95,10 @@ showContents(){
 
   switch(this.props.foo){
     case 0:
+      return  (PagesStableMatching.slice(this.state.i,this.state.i+1));
+   case 1:
       return  (PagesRepProblem.slice(this.state.i,this.state.i+1));
+      
    
 
   }
@@ -138,15 +140,15 @@ render() {
 }
 
 
-var PagesRepProblem = [
- RepProblem,RepProblem2
+var PagesStableMatching = [
+ StableMatching,StableMatching2
   
 ];
+ 
 
 
 
-
-var PagesRNN = [RNNIntro];
+var PagesRepProblem = [RepProblem0];
 
 const Frame = (props) => (
 <div className = "frame" {...props} />)

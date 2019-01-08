@@ -4,11 +4,11 @@ import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import axios from 'axios';
-import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/pytorch.js';
-import {CNNIntro} from './CONTS/CNN.js';
-import {NeurNetIntro} from './CONTS/NeuralNet.js';
-import {tensorIntro} from './CONTS/TensorFlow.js';
-import {RNNIntro} from './CONTS/RNN.js';
+import {Introduction, NetWorkArch, NeuralNetPytorch} from './CONTS/DeepLearning/pytorch.js';
+import {CNNIntro} from './CONTS/DeepLearning/CNN.js';
+import {NeurNetIntro} from './CONTS/DeepLearning/NeuralNet.js';
+import {tensorIntro} from './CONTS/DeepLearning/TensorFlow.js';
+import {RNNIntro} from './CONTS/DeepLearning/RNN.js';
 
 
 class DeepLearning extends Component{

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../CSS/imagestyles.css';
-import RepProb from "../IMG/RepProb.png";
-import graph from "../IMG/graph.png";
+import '../../CSS/imagestyles.css';
+import RepProb from "../../IMG/RepProb.png";
+import graph from "../../IMG/graph.png";
 import {ForceGraph, ForceGraphNode, ForceGraphLink} from 'react-vis-force';
 
 
@@ -23,7 +23,7 @@ const Indent3 = (props) => (
 const Frame = (props) => (
 <div className = "frame2" {...props} />)
 
-export const RepProblem=(
+export const StableMatching=(
 
 <div>
         <p className="textStyle"> Stable Matching:
@@ -84,7 +84,7 @@ export const RepProblem=(
 
 
 
-export const RepProblem2=(
+export const StableMatching2=(
 <div>
 <p className="textStyle"> <font size="4">
        You can see the sudo code for the Gale-Shapley algorithm to, the G-S algorithm 
@@ -118,6 +118,21 @@ Return the set S of engaged pairs<br/>
        </p>
        </CodeFrame3>
 
+</div>
+)
+
+
+
+export const RepProblem0=(
+
+<div> <p className="textStyle"> 5 Representative Problems:
+<p> <font size="4">
+       You can see the sudo code for the Gale-Shapley algorithm to, the G-S algorithm 
+       is assured to return a stable matching.and we prove that.
+
+         </font> </p>
+
+         </p>
 </div>
 )
 

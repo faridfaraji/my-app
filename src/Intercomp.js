@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
-import {InternetIntro, InternetIntro2} from './CONTS/InternetIntro.js';
+import {InternetIntro, InternetIntro2} from './CONTS/InternetComp/InternetIntro.js';
 
 
 class InterComp extends Component{

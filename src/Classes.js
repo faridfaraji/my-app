@@ -21,7 +21,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
 setStateHandler2(top) {
   var prev = this.state.prevTop;
  if (prev != "CPSC 303" &&prev != "CPSC 313"&&prev != "CPSC 340"&&
- prev != "CPSC 320" &&prev != "CPSC 417"&& prev != "CPSC 406"&&
+ prev != "CPSC 320" &&prev != "CPSC 415"&& prev != "CPSC 406"&&
  prev != "CPSC 417"&&prev != "CPSC 317"){
 
    prev = top;
@@ -36,6 +36,8 @@ setStateHandler2(top) {
 
   setStateHandler() {
       this.setState({hide: !this.state.hide})
+      if(!this.state.hide)
+         this.setState({hide2: false})
    }
 
 
@@ -73,8 +75,8 @@ const TOPICS = [
   { id: 1, topic: "CPSC 313"},
   { id: 2, topic: "CPSC 317"},
   { id: 3, topic: "CPSC 320"},
-  { id: 4, topic: "CPSC 340" },
-  {id: 5, topic: "CPSC 406"},
+  { id: 4, topic: "CPSC 340"},
+  { id: 5, topic: "CPSC 406"},
   { id: 6, topic: "CPSC 415"},
   { id: 7, topic: "CPSC 417"}
   
@@ -192,11 +194,15 @@ return (
   <div>
   <ul>
    <li>
-<Link to={`${match.url}`}>Reviews</Link>
+<Link className = "list" to={`${match.url}`}>Reviews</Link>
   </li>
     <li>
-<Link to={`${match.url}`}>Practice</Link>
+<Link className = "list" to={`${match.url}`}>Practice</Link>
   </li>
+      <li>
+<Link className = "list" to={`${match.url}`}>Solution</Link>
+  </li>
+
     </ul>
 </div>
 );
