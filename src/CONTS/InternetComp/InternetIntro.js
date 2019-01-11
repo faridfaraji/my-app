@@ -36,11 +36,18 @@ export const InternetIntro=(
        two or more communicating entities, as well as the actions taken on the transmission
         and/or receipt of a message or other event.<br/>
  <font className="textStylesmall" size="2" >
-        The Transmission Control Protocol (TCP) and the Internet Protocol (IP) are two of
+       >> The Transmission Control Protocol (TCP) and the Internet Protocol (IP) are two of
 the most important protocols in the Internet. The IP protocol specifies the format of
 the packets that are sent and received among routers and end systems</font>
+<br/>
 
+<font className="textStylesmall" size="2" >
+>> The hosts are further divided into two categories clients and servers
+        </font>
 </p>
+
+
+
        
 
          </font> </p>
@@ -67,6 +74,23 @@ export const InternetIntro2=(
 export const InternetIntro3=(
 <div>
  <p className="textStyle">The Network Edge:
+ <p> <font size="4">  <span style={{color: '#34e814'}}><b> <i>Edge router </i></b></span>: 
+ the network that physically connects an end system to the first router.
+ </font></p>
+</p>
+
+</div>
+
+)
+
+
+
+export const InternetIntro4=(
+<div>
+ <p className="textStyle">The Network Core:
+ <p> <font size="4">  <span style={{color: '#34e814'}}><b> <i>Edge router </i></b></span>: 
+ the network that physically connects an end system to the first router.
+ </font></p>
 </p>
 
 </div>
