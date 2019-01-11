@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, withRouter } from "react-router-dom";
 import '../../CSS/imagestyles.css';
 import RepProb from "../../IMG/RepProb.png";
 import graph from "../../IMG/graph.png";
 import {ForceGraph, ForceGraphNode, ForceGraphLink} from 'react-vis-force';
-
+import bipartite from "../../IMG/Bipartite.png";
 
 const CodeFrame = (props) => (
 <div className = "code-frame" {...props} />)
@@ -127,11 +128,37 @@ export const RepProblem0=(
 
 <div> <p className="textStyle"> 5 Representative Problems:
 <p> <font size="4">
-       You can see the sudo code for the Gale-Shapley algorithm to, the G-S algorithm 
-       is assured to return a stable matching.and we prove that.
-
+         In order to be able to design algorithm better lets look at some important problems 
+         that we are also going to encounter in future.
          </font> </p>
 
+         <p> 
+         
+          <br/>
+         Interval Scheduling: 
+          <p>  <font size="4">
+           Interval scheduling is a class of problem, which is very interesting in algorithm design 
+           In this problem we have to find a optimal solution, Lets say we have many requests to use
+           the same room at different times, we should pick the set of requests that maximizes the 
+           time room is used. (request times can not overlap) We can solve this problem with a <Link className="list2" to="/deep-learning/Neural Networks"> Greedy polynomial algorithm</Link>.<br/>
+
+           But now lets say we add weights to the request where we prefer some weights to others, 
+           this will make the problem more complex, we cant use the algorithm above anymore we will use <Link className="list2" to="/deep-learning/Neural Networks"> dynamic programming</Link> for this.<br/>
+         </font></p> 
+
+         </p>
+
+         <br/>
+
+          Bipartite Matching: 
+          <p>  <font size="4">
+          a graph G = (V, E) is bipartite if its node set V can be partitioned into sets X
+          and Y in such a way that every edge has one end in X and the other end in Y.
+          (Note: V is the node and E is the edge of graph)<br/>
+          The figure to right is a Bipartite Matching.
+         </font></p> 
+     
+         <img className = 'bipartitegraph' src={bipartite} alt="graph"/>
          </p>
 </div>
 )

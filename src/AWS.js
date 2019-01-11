@@ -7,7 +7,7 @@ import {LinEquat1, Basics} from './CONTS/LinearAlgebra/LinearEquation.js';
 
 
 
-class LinAlg extends Component{
+class AWS extends Component{
 constructor() {
     super()
     this.state = {
@@ -24,7 +24,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
       var currentLocation = this.props.location.pathname;
     return (
         <div>
-        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>Linear Algebra</Link>
+        <Link className = "link" onClick={this.setStateHandler.bind(this)} to={currentLocation}>AWS</Link>
          {this.state.hide && <Sublinks/>}
         </div> 
     );
@@ -54,7 +54,7 @@ const Sublinks = () => ( TOPICS.map((TOPIC) =>
 
 //****************************
 
-export class LinAlgConts extends Component {
+export class AWSConts extends Component {
 constructor(props) {
     super(props)
     this.state = {
@@ -168,4 +168,4 @@ const CodeFrame = (props) => (
 
 
 
-export default withRouter(LinAlg);
+export default withRouter(AWS);

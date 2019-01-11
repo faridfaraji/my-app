@@ -22,6 +22,7 @@ import InterComp, {InternetConts} from './Intercomp.js';
 import AlgoDesign, {AlgConts} from './Algodesign.js';
 import {TiChevronLeft, TiChevronRight} from 'react-icons/ti';
 import LinProg from './LinearProg.js';
+import AWS from './AWS.js';
 
 class App extends Component{
 
@@ -83,6 +84,8 @@ constructor(props) {
         <hr />
         <MLVCalc/>
         <hr />
+        <AWS/>
+        <hr/>
         </ul>
       </div>
 
@@ -108,7 +111,9 @@ constructor(props) {
          <Route path="/Algorithm-design/Stable Matching" render={(props) => <AlgConts {...props} foo={0} /> }/>
          <Route path="/Algorithm-design/Representative Problems" render={(props) => <AlgConts {...props} foo={1} /> }/>
 
-         <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={0} /> }/>
+         <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={1} /> }/>
+         <Route path="/linear-algebra/Basics" render={(props) => <LinAlgConts {...props} foo={0} /> }/>
+
       <Route path="/internet-computing/introduction" render={(props) => <InternetConts {...props} foo={0} /> }/>
       <Route path="/internet-computing/Application Layer" render={(props) => <InternetConts {...props} foo={1} /> }/>
 

@@ -11,6 +11,20 @@ text-decoration: none;
 
 
 }
+
+
+
+.list2{
+
+font-family: "Courier";
+color: #42bff4;
+font-weight: 900;
+  line-height: 2;
+  margin-left: 8px;
+
+
+}
+
 .textStyle{
 font-family: "Courier";
 font-size: 1.5em;

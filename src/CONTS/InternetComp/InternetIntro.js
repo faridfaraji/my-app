@@ -60,3 +60,15 @@ export const InternetIntro2=(
 </div>
 
 )
+
+
+
+
+export const InternetIntro3=(
+<div>
+ <p className="textStyle">The Network Edge:
+</p>
+
+</div>
+
+)
