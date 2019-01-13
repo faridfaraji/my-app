@@ -42,9 +42,6 @@ constructor(props) {
      }
 
 
-
-
-
     render() {
 
 
@@ -110,6 +107,9 @@ constructor(props) {
          <Route path="/deep-learning/RNN" render={(props) => <DeepConts {...props} foo={2} /> }/>
          <Route path="/Algorithm-design/Stable Matching" render={(props) => <AlgConts {...props} foo={0} /> }/>
          <Route path="/Algorithm-design/Representative Problems" render={(props) => <AlgConts {...props} foo={1} /> }/>
+         <Route path="/Algorithm-design/Algorithm Analysis" render={(props) => <AlgConts {...props} foo={2} /> }/>
+
+
 
          <Route path="/linear-algebra/Linear Equations" render={(props) => <LinAlgConts {...props} foo={1} /> }/>
          <Route path="/linear-algebra/Basics" render={(props) => <LinAlgConts {...props} foo={0} /> }/>

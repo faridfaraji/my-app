@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 
 import {StableMatching, StableMatching2,RepProblem0} from './CONTS/AlgoDesign/RepProb.js';
-
+import {Intro} from './CONTS/AlgoDesign/AlgoAnalysis.js';
 
 
 class AlgoDesign extends Component{
@@ -36,6 +36,7 @@ this.setStateHandler = this.setStateHandler.bind(this);
 const TOPICS = [
   { id: 0, topic: "Stable Matching", subs: [] },
   { id: 1, topic: "Representative Problems", subs: [] },
+  { id: 2, topic: "Algorithm Analysis", subs: [] },
   
 ];
 
@@ -73,6 +74,9 @@ var length;
     case 1:
       length = PagesRepProblem.length-1;
       break;
+    case 2:
+      length = PagesAlgoAnalysis.length-1;
+      break;
    
 
   }
@@ -98,8 +102,9 @@ showContents(){
       return  (PagesStableMatching.slice(this.state.i,this.state.i+1));
    case 1:
       return  (PagesRepProblem.slice(this.state.i,this.state.i+1));
+    case 2:
+      return  (PagesAlgoAnalysis.slice(this.state.i,this.state.i+1));
       
-   
 
   }
 
@@ -142,6 +147,11 @@ render() {
 
 var PagesStableMatching = [
  StableMatching,StableMatching2
+  
+];
+
+var PagesAlgoAnalysis = [
+ Intro
   
 ];
  
