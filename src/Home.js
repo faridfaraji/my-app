@@ -46,7 +46,7 @@ return(
  <br/>
   <p className="textStyle"> Welcome to CSNotes, In here we try to share our knowledge and our projects with
   other CS students and anyone who is interested in Data Science or Computer Systems, we plan to add more topics 
-  in the coming year like distubuted Systems and Internet Computing , 
+  in the coming year like distubuted Systems and Internet Computing, 
   in here you can find contents on a wide range of topics, we love learning about these topics and we truely believe that 
   the best way to learn something is to be able to explain it to others so here we try to explain seemingly 
   complex subjects in a very easy way. You can 

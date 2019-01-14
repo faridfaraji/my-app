@@ -29,8 +29,9 @@ export const Intro=(
 <div>
         <p className="textStyle"> Computational Tractability:
       <p> <font size="4">
-       A matching is a mapping from the elements of one set 
-       to the elements of the other set. A matching is not stable if:
+            An algorithm is efficient if it is 
+            platform-independent, instance-independent, and of predictive value with
+            respect to increasing input sizes
 
          </font> </p>
        </p>
