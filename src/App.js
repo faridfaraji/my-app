@@ -56,6 +56,7 @@ constructor(props) {
       
         <ul>
     <Home />
+    
         <hr />
        <About />
         <hr />
@@ -88,7 +89,6 @@ constructor(props) {
 
      
      </Sidebar>
-
        
         
 
@@ -118,8 +118,7 @@ constructor(props) {
       <Route path="/internet-computing/Application Layer" render={(props) => <InternetConts {...props} foo={1} /> }/>
 
 
-
-       <Route path="/classes/CPSC 303" render={(props) => <ClassesConts {...props} foo={0} /> }/>
+      <Route path="/classes/CPSC 303" render={(props) => <ClassesConts {...props} foo={0} /> }/>
        <Route path="/classes/CPSC 313" render={(props) => <ClassesConts {...props} foo={1} /> }/>
        <Route path="/classes/CPSC 320" render={(props) => <ClassesConts {...props} foo={2} /> }/>
        <Route path="/classes/CPSC 317" render={(props) => <ClassesConts {...props} foo={3} /> }/>

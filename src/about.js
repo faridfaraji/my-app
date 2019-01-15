@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link , withRouter} from "react-router-dom";
 import mypic from './IMG/mypic.jpg';
 import facebook from './IMG/facebook.ico';
 import linkedin from './IMG/in.ico';
@@ -7,12 +7,14 @@ import shikhar from './IMG/shikhar.jpg';
 import './CSS/imagestyles.css'; 
 import Fade from 'react-reveal/Fade';
 import './CSS/About.css'
+import { Document, Page } from 'react-pdf';
+import resume from "./IMG/Farid_Faraji_CV.pdf";
 
 
 
 class About extends Component{
-constructor() {
-    super()
+constructor(props) {
+    super(props)
     this.state = {
       
     }
@@ -67,7 +69,7 @@ export function ShowAbout(){
         <p className="abouttext"> Hi, My name is Farid, I am the creator of CSNotes I 
         am a CS undergrad student at the university 
         of British Columbia located in Vancouver, My interests lie in Computaional Optimization, 
-        Data Mining, Unsupervised learning and also Parallel Computation, Distributed systems. <Link  to="/" >More about me</Link>
+        Data Mining, Unsupervised learning and also Parallel Computation, Distributed system. <Link onClick={(e) =><Resume/>} to="\about" >More about me</Link>
         </p>
         <div className = "facebook1">
           <a href={url1}>
@@ -79,15 +81,40 @@ export function ShowAbout(){
       </div>
       
       </div>
-        
-
-      
       </Fade> 
     
     );
  
-
 }
+
+
+class Resume extends Component {
+  state = {
+    numPages: null,
+    pageNumber: 1,
+  }
+ 
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  }
+ 
+  render() {
+    const { pageNumber, numPages } = this.state;
+ 
+    return (
+      <div>
+        <p>"Fuck"</p>
+        <Document
+          file={resume}
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+        </Document>
+        </div>
+        );
+      }
+    }
+    
+
 
 
 
