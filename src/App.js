@@ -116,6 +116,7 @@ constructor(props) {
 
       <Route path="/internet-computing/introduction" render={(props) => <InternetConts {...props} foo={0} /> }/>
       <Route path="/internet-computing/Application Layer" render={(props) => <InternetConts {...props} foo={1} /> }/>
+      <Route path="/internet-computing/Network Layer" render={(props) => <InternetConts {...props} foo={2} /> }/>
 
 
       <Route path="/classes/CPSC 303" render={(props) => <ClassesConts {...props} foo={0} /> }/>

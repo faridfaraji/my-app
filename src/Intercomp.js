@@ -33,7 +33,8 @@ this.setStateHandler = this.setStateHandler.bind(this);
 
 const TOPICS = [
   { id: 0, topic: "Introduction", subs: [] },
-   { id: 0, topic: "Application Layer", subs: [] },
+   { id: 1, topic: "Application Layer", subs: [] },
+   { id: 2, topic: "Network Layer", subs: [] },
 ];
 
 
@@ -72,6 +73,9 @@ var length;
     case 1:
       length = PagesAppLayer.length-1;
       break;
+    case 2:
+      length = PagesNetLayer.length-1;
+      break;
    
 
   }
@@ -97,6 +101,8 @@ showContents(){
       return  (PagesInternetIntro.slice(this.state.i,this.state.i+1));
     case 1:
       return  (PagesAppLayer.slice(this.state.i,this.state.i+1));
+    case 2:
+      return  (PagesNetLayer.slice(this.state.i,this.state.i+1));
 
   }
 
@@ -144,6 +150,12 @@ var PagesInternetIntro = [
 
 
 var PagesAppLayer = [
+
+
+];
+
+
+var PagesNetLayer = [
 
 
 ];
