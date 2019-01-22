@@ -4,6 +4,7 @@ import './CSS/imagestyles.css';
 import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import {InternetIntro, InternetIntro2, InternetIntro3, InternetIntro4} from './CONTS/InternetComp/InternetIntro.js';
+import {NetLayerIntro, NetLayerIPv4, NetLayerIPv4_2} from './CONTS/InternetComp/NetLayer.js';
 
 
 class InterComp extends Component{
@@ -156,7 +157,7 @@ var PagesAppLayer = [
 
 
 var PagesNetLayer = [
-
+  NetLayerIntro, NetLayerIPv4, NetLayerIPv4_2
 
 ];
 

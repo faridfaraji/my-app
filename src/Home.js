@@ -71,8 +71,7 @@ return(
  <div>
  <div className="rectangle3">
  <img src={homestyle} alt="Mypic"/>
- <div className="rectangle5">
- </div>
+ 
  </div>  
  
  </div>
