@@ -7,10 +7,10 @@ const CodeFrame = (props) => (
 
 
 
-export const NetLayerIntro=(
+export const ASRoutingIntro=(
 
 <div>
-        <p className="textStyle">Internet Protocol(IP):
+        <p className="textStyle">Intra-AS Routing in the Internet(OSPF):
        <p> <font size="4">
        A network interface is the point of interconnection between a computer and a private or public network
   
@@ -29,7 +29,7 @@ export const NetLayerIntro=(
 
 
 
-export const  NetLayerIPv4=(
+export const  ASRoutingIntro1=(
 <div>
  <p className="textStyle">Datagram Format:
 </p>
@@ -37,14 +37,9 @@ export const  NetLayerIPv4=(
 </div>)
 
 
-export const NetLayerIPv4_2=(
+export const ASRoutingIntro2=(
         <div>
          <p className="textStyle">IP Addressing:
         </p>
         
         </div>)
-        
-        
-
-
-

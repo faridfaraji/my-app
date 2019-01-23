@@ -5,6 +5,7 @@ import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import {InternetIntro, InternetIntro2, InternetIntro3, InternetIntro4} from './CONTS/InternetComp/InternetIntro.js';
 import {NetLayerIntro, NetLayerIPv4, NetLayerIPv4_2} from './CONTS/InternetComp/NetLayer.js';
+import {ASRoutingIntro} from './CONTS/InternetComp/ASRouting';
 
 
 class InterComp extends Component{
@@ -36,6 +37,7 @@ const TOPICS = [
   { id: 0, topic: "Introduction", subs: [] },
    { id: 1, topic: "Application Layer", subs: [] },
    { id: 2, topic: "Network Layer", subs: [] },
+   { id: 3, topic: "AS Routing", subs: [] },
 ];
 
 
@@ -77,6 +79,9 @@ var length;
     case 2:
       length = PagesNetLayer.length-1;
       break;
+    case 3:
+      length = PagesASRouting.length-1;
+      break;
    
 
   }
@@ -104,6 +109,9 @@ showContents(){
       return  (PagesAppLayer.slice(this.state.i,this.state.i+1));
     case 2:
       return  (PagesNetLayer.slice(this.state.i,this.state.i+1));
+    case 3:
+      return  (PagesASRouting.slice(this.state.i,this.state.i+1));
+
 
   }
 
@@ -158,6 +166,11 @@ var PagesAppLayer = [
 
 var PagesNetLayer = [
   NetLayerIntro, NetLayerIPv4, NetLayerIPv4_2
+
+];
+
+var PagesASRouting = [
+  ASRoutingIntro
 
 ];
 
