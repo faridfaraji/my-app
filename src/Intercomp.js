@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import './CSS/textStyles.css';
 import {InternetIntro, InternetIntro2, InternetIntro3, InternetIntro4} from './CONTS/InternetComp/InternetIntro.js';
 import {NetLayerIntro, NetLayerIPv4, NetLayerIPv4_2} from './CONTS/InternetComp/NetLayer.js';
-import {ASRoutingIntro} from './CONTS/InternetComp/ASRouting';
+import {ASRoutingIntro, ASRoutingIntro1} from './CONTS/InternetComp/ASRouting';
 
 
 class InterComp extends Component{
@@ -15,8 +15,9 @@ constructor() {
       hide: false
     }
 this.setStateHandler = this.setStateHandler.bind(this);
-
 }
+
+
   setStateHandler() {
       this.setState({hide: !this.state.hide})
    }
@@ -63,7 +64,9 @@ constructor(props) {
       i: 0,
       hide: false
 }
+
 }
+
 
 
 
@@ -101,7 +104,6 @@ previousPage(){
 }
 
 showContents(){
-
   switch(this.props.foo){
     case 0:
       return  (PagesInternetIntro.slice(this.state.i,this.state.i+1));
@@ -148,7 +150,6 @@ render() {
   }
 
 
-
 }
 
 
@@ -170,7 +171,7 @@ var PagesNetLayer = [
 ];
 
 var PagesASRouting = [
-  ASRoutingIntro
+  ASRoutingIntro, ASRoutingIntro1
 
 ];
 

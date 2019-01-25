@@ -17,7 +17,7 @@ export const ASRoutingIntro=(
         the Internet is a network of ISPs, with each
          ISP consisting of its own network of routers. An ISP generally desires to operate its network as it
          pleases, like running its own routing algorithm or to hide aspect of its network.<br/>
-         We also learned that routers using the routing table decide the next destination of the packet, 
+         We also learned that routers using the routing table and forwarding table decide the next destination of the packet, 
          though there are millions of routers and it becomes infeasible to just keep track of all routers IP addresses
          So,<br/>
          Now given the problems above what are we going to do about it:<br/>
@@ -43,7 +43,20 @@ export const ASRoutingIntro=(
 
 export const  ASRoutingIntro1=(
 <div>
- <p className="textStyle">Datagram Format:
+ <p className="textStyle">Inter-AS Routing(BGP):
+ <p> <font size="4">
+        OSPF is the protocol that takes care of an Intra-AS routing (amongst routers within AS)
+        <br/>
+         The <span style={{color: '#34e814'}}><b>BGP <i></i></b> </span> is the protocol that we use to 
+         do routing among ASs.
+
+          <br/>
+
+         An AS is just bunch of routers that are under the same <Link className="list2" to="/deep-learning/Neural Networks"> Administrative Control</Link>.
+
+  
+       </font>
+          </p>
 </p>
 
 </div>)
