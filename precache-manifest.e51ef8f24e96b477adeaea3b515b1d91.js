@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/facebook.ca533b88.ico"
   },
   {
-    "revision": "bdf58543a21a0ca3741f",
+    "revision": "dafbb6ed7a0248b6f2c9",
     "url": "/my-app/static/css/main.aae099ac.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/my-app/static/media/Bipartite.69bc7ce0.png"
   },
   {
-    "revision": "bdf58543a21a0ca3741f",
-    "url": "/my-app/static/js/main.bdf58543.chunk.js"
+    "revision": "dafbb6ed7a0248b6f2c9",
+    "url": "/my-app/static/js/main.dafbb6ed.chunk.js"
   },
   {
     "revision": "ce856c9059217681f51088174a8aa155",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/my-app/static/css/1.a56fd6a0.chunk.css"
   },
   {
-    "revision": "7dd847875bf90af267fe605dd18dff6d",
+    "revision": "0aee0ccad247c4257ec6a3b2e3e15def",
     "url": "/my-app/index.html"
   }
 ];
